@@ -1,1 +1,0 @@
-2022-06-15 13:45:06.993  INFO 3292 --- [http-nio-8080-exec-4] o.j.orderproject.item.ItemController     : addItem postRequest: AbstractItem{itemId='acc2fb44-eb73-4774-9a9d-73fbcdcdee6d', name='Bananas', description='Green sour bapples', price=2.15, stock=2}

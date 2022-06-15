@@ -1,2 +1,0 @@
-2022-06-15 14:49:43.136  INFO 25892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-15 14:49:43.139  INFO 25892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 721 ms

@@ -1,2 +1,0 @@
-2022-06-15 14:53:18.155  INFO 4856 --- [http-nio-8080-exec-2] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
-2022-06-15 14:53:18.253  INFO 4856 --- [http-nio-8080-exec-2] o.j.orderproject.item.ItemController     : addItem postRequest: AbstractItem{itemId='a19c3627-2758-4d55-914a-8e5328cc9d26', name='BEER', description='BEER', price=2.15, stock=2}

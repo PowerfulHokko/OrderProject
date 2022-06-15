@@ -1,2 +1,0 @@
-2022-06-15 14:50:46.059  INFO 25892 --- [http-nio-8080-exec-7] o.j.orderproject.item.ItemController     : addItem postRequest: AbstractItem{itemId='ce9bb902-e432-4b3c-8188-f18fe0f522e2', name='BEER', description='BEER', price=2.15, stock=-2}
-2022-06-15 14:50:46.065  WARN 25892 --- [http-nio-8080-exec-7] o.j.o.ControllerExceptionHandler         : Input cannot be less than zero

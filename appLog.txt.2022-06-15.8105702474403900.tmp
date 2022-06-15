@@ -1,4 +1,0 @@
-2022-06-15 14:10:24.298  INFO 8996 --- [http-nio-8080-exec-4] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
-2022-06-15 14:10:24.303  INFO 8996 --- [http-nio-8080-exec-4] o.j.orderproject.item.ItemController     : addItem postRequest: AbstractItem{itemId='3803ca23-0cc9-46cd-93fb-72af4d00c5d2', name='Bananas', description='Bananas', price=2.15, stock=2}
-2022-06-15 14:10:24.304  INFO 8996 --- [http-nio-8080-exec-4] o.j.orderproject.item.ItemRepository     : Found itemId: Bananas
-2022-06-15 14:10:24.304  INFO 8996 --- [http-nio-8080-exec-4] o.j.orderproject.item.ItemRepository     : Put on ID: Bananas

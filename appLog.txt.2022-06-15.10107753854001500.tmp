@@ -1,2 +1,0 @@
-2022-06-15 14:44:20.308  INFO 26476 --- [http-nio-8080-exec-6] o.j.orderproject.order.OrderController   : Order request for JD
-2022-06-15 14:44:20.311  INFO 26476 --- [http-nio-8080-exec-6] o.j.orderproject.order.OrderRepository   : Succesfully logged order f1b2f1d3-773a-4240-acb0-25d6ac4f1884 for customer JD .
