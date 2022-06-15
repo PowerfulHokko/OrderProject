@@ -18,6 +18,10 @@ public class FieldValidators {
         if(Arrays.stream(inputs).anyMatch(in -> in<=0)) throw new IllegalArgumentException("Input cannot be less than or equal to zero");
     }
 
+    public static void guardLessThanZero(int... inputs){
+        if(Arrays.stream(inputs).anyMatch(in -> in<0)) throw new IllegalArgumentException("Input cannot be less than zero");
+    }
+
     public static void validateEmail(String email){
         if (!EmailValidator.getInstance().isValid(email)) {
             throw new IllegalArgumentException("Invalid email address");

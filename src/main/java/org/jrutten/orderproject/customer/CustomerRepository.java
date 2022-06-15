@@ -20,11 +20,15 @@ public class CustomerRepository {
     public void registerCustomerAccount(Customer customer) {
         checkCustomerInMap(customer);
         logger.info("Registered: " + customer.toString());
-        this.customerMap.put(customer.getEmail(), customer);
+        this.customerMap.put(customer.getId(), customer);
     }
 
     private void checkCustomerInMap(Customer customer) {
-        if(this.customerMap.containsKey(customer.getEmail())) {
+        if(this.customerMap.containsKey(customer.getId())) {
+            throw new CustomerAlreadyRegisteredException("Customer with following id was already registered: " + customer.getId());
+        }
+
+        if(this.customerMap.values().stream().anyMatch(val -> val.getEmail().equals(customer.getEmail()))) {
             throw new CustomerAlreadyRegisteredException("Customer with following email was already registered: " + customer.getEmail());
         }
     }

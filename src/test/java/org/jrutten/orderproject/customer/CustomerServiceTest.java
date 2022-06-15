@@ -61,8 +61,8 @@ class CustomerServiceTest {
     }
 
     @Test
-    @DisplayName("When trying to register same customer twice then throw exception")
-    void givenACustomer_whenTryingToRegisterSameCustomerTwice_thenCustomerAlreadyExistsException(){
+    @DisplayName("When trying to register same id twice then throw exception")
+    void givenACustomer_whenTryingToRegisterSameID_thenCustomerAlreadyExistsException(){
         CreateCustomerDTO createCustomerDTO = new CreateCustomerDTO(
                 "Fred",
                 "Flinstone",
@@ -74,6 +74,30 @@ class CustomerServiceTest {
         CustomerDTO customerAccount = this.customerService.createCustomerAccount(createCustomerDTO);
 
         assertThrows(CustomerAlreadyRegisteredException.class, ()->this.customerService.createCustomerAccount(createCustomerDTO));
+    }
+
+    @Test
+    @DisplayName("When trying to register same id twice then throw exception")
+    void givenACustomer_whenTryingToRegisterSameEmail_thenCustomerAlreadyExistsException(){
+        CreateCustomerDTO createCustomerDTO = new CreateCustomerDTO(
+                "Fred",
+                "Flinstone",
+                "fred@stone.dk",
+                new Address("magmastreet", 2, "", 1, "Bedrock"),
+                "No phones existed at the time"
+        );
+
+        CreateCustomerDTO createCustomerDTO2 = new CreateCustomerDTO(
+                "Maria",
+                "Flinstone",
+                "fred@stone.dk",
+                new Address("magmastreet", 2, "", 1, "Bedrock"),
+                "Smoke signals"
+        );
+
+        CustomerDTO customerAccount = this.customerService.createCustomerAccount(createCustomerDTO);
+
+        assertThrows(CustomerAlreadyRegisteredException.class, ()->this.customerService.createCustomerAccount(createCustomerDTO2));
     }
 
     @Test

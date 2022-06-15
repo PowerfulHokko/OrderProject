@@ -18,7 +18,6 @@ public class CustomerController {
     }
 
     @PostMapping(consumes = "application/json", produces = "application/json")
-    @PreAuthorize("hasAuthority('ADMIN')")
     @ResponseStatus(HttpStatus.CREATED)
     public CustomerDTO createCustomerAccount(@RequestBody CreateCustomerDTO createCustomerDTO){
         logger.info("Post request for createCustomerAccount: " + createCustomerDTO.toString() );

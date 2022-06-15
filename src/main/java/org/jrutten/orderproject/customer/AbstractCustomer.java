@@ -68,3 +68,4 @@ public abstract class AbstractCustomer {
         return Objects.hash(firstName, lastName, email, address, phoneNumber);
     }
 }
+
