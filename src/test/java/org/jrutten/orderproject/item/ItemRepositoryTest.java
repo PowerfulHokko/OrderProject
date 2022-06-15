@@ -27,8 +27,8 @@ class ItemRepositoryTest {
 
     @Test
     void givenTwoDifferentItems_whenAddingItems_ok(){
-        Item item = new Item("a","Apple", "An apple", 1.20, 5);
-        Item item2 = new Item("b","Bananas", "Monkeys love these", 1.20, 5);
+        Item item = new Item("a","Beer", "An apple", 1.20, 5);
+        Item item2 = new Item("b","Bacon", "Monkeys love these", 1.20, 5);
 
         itemRepository.addToRepository(item);
         itemRepository.addToRepository(item2);

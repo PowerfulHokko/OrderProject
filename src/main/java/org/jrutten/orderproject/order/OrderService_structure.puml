@@ -1,0 +1,408 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "org.jrutten.orderproject.order.OrderService",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1333511978 { 
+   	label=jrutten
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_879562275 { 
+   	label=orderproject
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   AbstractCustomer1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AbstractCustomer</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   address: Address [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   email: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   firstName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   lastName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   phoneNumber: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+AbstractCustomerWithID1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AbstractCustomerWithID</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   id: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+AbstractItem895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AbstractItem</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   description: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemId: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   price: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   stock: int [1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Address1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Address</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   bus: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   city: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   postalCode: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   street: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   streetNumber: int [1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CreateCustomerDTO1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CreateCustomerDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CreateItemDTO895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CreateItemDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Customer1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Customer</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CustomerDTO1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CustomerDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CustomerRepository1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CustomerRepository</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   customerMap: Map&lt;String, Customer&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- checkCustomerInMap(customer: Customer)</TD></TR>
+<TR><TD ALIGN="LEFT" >- initMap()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ registerCustomerAccount(customer: Customer)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FieldValidators194690310[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FieldValidators</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ guardLessThanZero(inputs: int...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ guardObjectNull(inputs: Object...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ guardStringNullAndBlank(inputs: String...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ guardZeroOrLessThan(inputs: int...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ validateEmail(email: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Item895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Item</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ItemDTO895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ItemDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ItemRepository895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ItemRepository</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   itemMap: Map&lt;String, Item&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addToRepository(item: Item): Item</TD></TR>
+<TR><TD ALIGN="LEFT" >- getItemIDFromMapBasedOnIDorNameReturnBlankIfNotFound(item: Item): String</TD></TR>
+<TR><TD ALIGN="LEFT" >- initMap()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ removeOrderedItems(orderList: List&lt;ItemsToOrderDTO&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >- updateCurrentItemInMap(item: Item, id: String): Item</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Order2001879309[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Order</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   amount: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   customerId: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   orderId: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   orderedItemsList: List&lt;OrderedItems&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   shippingDate: LocalDate [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- calculateTotalPrice(orderList: List&lt;OrderedItems&gt;): double</TD></TR>
+<TR><TD ALIGN="LEFT" >- generateOrderId(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+OrderController2001879309[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)OrderController</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   orderService: OrderService [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ placeOrder(id: String, orderList: List&lt;ItemsToOrderDTO&gt;): OrderDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+OrderMapper2001879309[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)OrderMapper</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   itemRepository: ItemRepository [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- mapItemsToOrderListToOrderedList(orderList: List&lt;ItemsToOrderDTO&gt;): List&lt;OrderedItems&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- mapToOrderedItemsDTOList(orderedItemsList: List&lt;OrderedItems&gt;): List&lt;OrderedItemsDTO&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- toItemDTO(item: Item): ItemDTO</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toOrder(customerId: String, orderList: List&lt;ItemsToOrderDTO&gt;, shippingDate: LocalDate): Order</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toOrderDTO(order: Order): OrderDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+OrderRepository2001879309[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)OrderRepository</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   customerOrderMap: NavigableMap&lt;String, HashMap&lt;String, Order&gt;&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- checkOverwriteAttemptOnOrderForClient(order: Order)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ placeOrder(order: Order)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+OrderService2001879309[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)OrderService</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   customerRepository: CustomerRepository [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemRepository: ItemRepository [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   orderMapper: OrderMapper [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   orderRepository: OrderRepository [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- getShippingDate(orderList: List&lt;ItemsToOrderDTO&gt;): LocalDate</TD></TR>
+<TR><TD ALIGN="LEFT" >+ placeOrder(customerId: String, orderList: List&lt;ItemsToOrderDTO&gt;): OrderDTO</TD></TR>
+<TR><TD ALIGN="LEFT" >- validateCustomer(customerId: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >- validateItems(orderList: List&lt;ItemsToOrderDTO&gt;)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+OrderedItems2001879309[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)OrderedItems</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   amount: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   item: Item [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   pricePerPieceAtRequest: double [1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+AbstractCustomer1737554367 -> AbstractCustomerWithID1737554367[arrowhead=none, arrowtail=empty, dir=both];
+AbstractCustomer1737554367 -> Address1737554367[label="address
+[0..1]"];
+AbstractCustomer1737554367 -> CreateCustomerDTO1737554367[arrowhead=none, arrowtail=empty, dir=both];
+AbstractCustomerWithID1737554367 -> Customer1737554367[arrowhead=none, arrowtail=empty, dir=both];
+AbstractCustomerWithID1737554367 -> CustomerDTO1737554367[arrowhead=none, arrowtail=empty, dir=both];
+AbstractItem895683956 -> CreateItemDTO895683956[arrowhead=none, arrowtail=empty, dir=both];
+AbstractItem895683956 -> Item895683956[arrowhead=none, arrowtail=empty, dir=both];
+AbstractItem895683956 -> ItemDTO895683956[arrowhead=none, arrowtail=empty, dir=both];
+CustomerRepository1737554367 -> Customer1737554367[label="customerMap
+[0..*]"];
+ItemRepository895683956 -> Item895683956[label="itemMap
+[0..*]"];
+Order2001879309 -> OrderedItems2001879309[label="orderedItemsList
+[0..*]"];
+OrderController2001879309 -> OrderService2001879309[label="orderService
+[0..1]"];
+OrderMapper2001879309 -> ItemRepository895683956[label="itemRepository
+[0..1]"];
+OrderRepository2001879309 -> Order2001879309[label="customerOrderMap
+[0..*]"];
+OrderService2001879309 -> CustomerRepository1737554367[label="customerRepository
+[0..1]"];
+OrderService2001879309 -> ItemRepository895683956[label="itemRepository
+[0..1]"];
+OrderService2001879309 -> OrderMapper2001879309[label="orderMapper
+[0..1]"];
+OrderService2001879309 -> OrderRepository2001879309[label="orderRepository
+[0..1]"];
+OrderedItems2001879309 -> Item895683956[label="item
+[0..1]"];
+    
+}
+@enduml

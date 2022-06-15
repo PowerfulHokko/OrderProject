@@ -1,0 +1,11 @@
+2022-06-15 14:10:26.464  INFO 8996 --- [http-nio-8080-exec-9] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
+2022-06-15 14:10:26.470  INFO 8996 --- [http-nio-8080-exec-9] o.j.orderproject.item.ItemController     : addItem postRequest: AbstractItem{itemId='b7a721bd-b056-44c1-b9da-714d28e55324', name='Bananas', description='Bananas', price=2.15, stock=2}
+2022-06-15 14:10:26.470  INFO 8996 --- [http-nio-8080-exec-9] o.j.orderproject.item.ItemRepository     : Found itemId: Bananas
+2022-06-15 14:10:26.471  INFO 8996 --- [http-nio-8080-exec-9] o.j.orderproject.item.ItemRepository     : Put on ID: Bananas
+2022-06-15 14:42:28.838  INFO 26476 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 26476 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
+2022-06-15 14:42:28.840  INFO 26476 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"
+2022-06-15 14:42:29.479  INFO 26476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-15 14:42:29.484  INFO 26476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-15 14:42:29.484  INFO 26476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 14:42:29.557  INFO 26476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-15 14:42:29.558  INFO 26476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 693 ms

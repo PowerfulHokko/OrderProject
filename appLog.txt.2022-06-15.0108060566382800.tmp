@@ -1,0 +1,7 @@
+2022-06-15 14:44:36.424  INFO 26476 --- [http-nio-8080-exec-7] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
+2022-06-15 14:44:36.431  WARN 26476 --- [http-nio-8080-exec-7] j.o.c.CustomerControllerExceptionHandler : Input cannot be less than zero
+2022-06-15 14:49:42.381  INFO 25892 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 25892 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
+2022-06-15 14:49:42.383  INFO 25892 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"
+2022-06-15 14:49:43.059  INFO 25892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-15 14:49:43.064  INFO 25892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-15 14:49:43.064  INFO 25892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]

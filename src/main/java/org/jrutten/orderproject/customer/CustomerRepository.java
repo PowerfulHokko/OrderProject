@@ -15,6 +15,14 @@ public class CustomerRepository {
     public CustomerRepository() {
         this.customerMap = new HashMap<>();
         this.logger = Logger.getLogger(this.getClass().getName());
+
+        initMap();
+    }
+
+    private void initMap() {
+        Address address = new Address("Street", 1, "b", 1000, "Blank");
+        Customer customer = new Customer("JD", "John", "Doe", "j.doe@mail.com", address, "555-4444-4321" );
+        this.customerMap.put(customer.getId(), customer);
     }
 
     public void registerCustomerAccount(Customer customer) {

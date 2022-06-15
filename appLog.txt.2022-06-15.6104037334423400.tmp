@@ -1,0 +1,2 @@
+2022-06-15 13:42:22.964  INFO 26024 --- [http-nio-8080-exec-3] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
+2022-06-15 13:42:22.988  INFO 26024 --- [http-nio-8080-exec-3] o.j.orderproject.item.ItemController     : addItem postRequest: AbstractItem{itemId='2bb21c45-12a5-4cd0-aecd-bd775be921a9', name='Bananas', description='Green sour bapples', price=2.15, stock=2}

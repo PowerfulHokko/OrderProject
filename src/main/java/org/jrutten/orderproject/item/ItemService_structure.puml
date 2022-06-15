@@ -1,0 +1,239 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "org.jrutten.orderproject.item.ItemService",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1333511978 { 
+   	label=jrutten
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_879562275 { 
+   	label=orderproject
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   AbstractItem895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AbstractItem</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   description: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemId: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   price: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   stock: int [1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CreateItemDTO895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CreateItemDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FieldValidators194690310[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FieldValidators</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ guardLessThanZero(inputs: int...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ guardObjectNull(inputs: Object...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ guardStringNullAndBlank(inputs: String...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ guardZeroOrLessThan(inputs: int...)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ validateEmail(email: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Item895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Item</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ItemController895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ItemController</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   itemService: ItemService [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addItem(createItemDTO: CreateItemDTO): ItemDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ItemDTO895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ItemDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ItemMapper895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ItemMapper</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ mapListOfItemsToListOfItemDTO(items: Collection&lt;Item&gt;): List&lt;ItemDTO&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toItem(createItemDTO: CreateItemDTO): Item</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toItemDTO(item: Item): ItemDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ItemRepository895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ItemRepository</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   itemMap: Map&lt;String, Item&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addToRepository(item: Item): Item</TD></TR>
+<TR><TD ALIGN="LEFT" >- getItemIDFromMapBasedOnIDorNameReturnBlankIfNotFound(item: Item): String</TD></TR>
+<TR><TD ALIGN="LEFT" >- initMap()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ removeOrderedItems(orderList: List&lt;ItemsToOrderDTO&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >- updateCurrentItemInMap(item: Item, id: String): Item</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ItemService895683956[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ItemService</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   itemMapper: ItemMapper [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemRepository: ItemRepository [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addItem(createItemDTO: CreateItemDTO): ItemDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+AbstractItem895683956 -> CreateItemDTO895683956[arrowhead=none, arrowtail=empty, dir=both];
+AbstractItem895683956 -> Item895683956[arrowhead=none, arrowtail=empty, dir=both];
+AbstractItem895683956 -> ItemDTO895683956[arrowhead=none, arrowtail=empty, dir=both];
+ItemController895683956 -> ItemService895683956[label="itemService
+[0..1]"];
+ItemRepository895683956 -> Item895683956[label="itemMap
+[0..*]"];
+ItemService895683956 -> ItemMapper895683956[label="itemMapper
+[0..1]"];
+ItemService895683956 -> ItemRepository895683956[label="itemRepository
+[0..1]"];
+    
+}
+@enduml

@@ -1,0 +1,2 @@
+2022-06-15 14:50:19.801  INFO 25892 --- [http-nio-8080-exec-5] o.j.orderproject.order.OrderController   : Order request for JD
+2022-06-15 14:50:19.809  INFO 25892 --- [http-nio-8080-exec-5] o.j.orderproject.order.OrderRepository   : Succesfully logged order 9c0850e5-f915-473e-9efc-07ff18181719 for customer JD .

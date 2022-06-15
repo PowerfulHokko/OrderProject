@@ -1,0 +1,251 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "org.jrutten.orderproject.customer.CustomerService",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1333511978 { 
+   	label=jrutten
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_879562275 { 
+   	label=orderproject
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   AbstractCustomer1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AbstractCustomer</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   address: Address [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   email: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   firstName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   lastName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   phoneNumber: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+AbstractCustomerWithID1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AbstractCustomerWithID</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   id: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Address1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Address</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   bus: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   city: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   postalCode: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   street: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   streetNumber: int [1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CreateCustomerDTO1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CreateCustomerDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Customer1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Customer</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CustomerController1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CustomerController</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   customerService: CustomerService [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ createCustomerAccount(createCustomerDTO: CreateCustomerDTO): CustomerDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CustomerDTO1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CustomerDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CustomerMapper1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CustomerMapper</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ toCustomer(createCustomerDTO: CreateCustomerDTO): Customer</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toCustomerDTO(customer: Customer): CustomerDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CustomerRepository1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CustomerRepository</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   customerMap: Map&lt;String, Customer&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- checkCustomerInMap(customer: Customer)</TD></TR>
+<TR><TD ALIGN="LEFT" >- initMap()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ registerCustomerAccount(customer: Customer)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CustomerService1737554367[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CustomerService</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   customerMapper: CustomerMapper [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   customerRepository: CustomerRepository [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ createCustomerAccount(createCustomerDTO: CreateCustomerDTO): CustomerDTO</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+AbstractCustomer1737554367 -> AbstractCustomerWithID1737554367[arrowhead=none, arrowtail=empty, dir=both];
+AbstractCustomer1737554367 -> Address1737554367[label="address
+[0..1]"];
+AbstractCustomer1737554367 -> CreateCustomerDTO1737554367[arrowhead=none, arrowtail=empty, dir=both];
+AbstractCustomerWithID1737554367 -> Customer1737554367[arrowhead=none, arrowtail=empty, dir=both];
+AbstractCustomerWithID1737554367 -> CustomerDTO1737554367[arrowhead=none, arrowtail=empty, dir=both];
+CustomerController1737554367 -> CustomerService1737554367[label="customerService
+[0..1]"];
+CustomerRepository1737554367 -> Customer1737554367[label="customerMap
+[0..*]"];
+CustomerService1737554367 -> CustomerMapper1737554367[label="customerMapper
+[0..1]"];
+CustomerService1737554367 -> CustomerRepository1737554367[label="customerRepository
+[0..1]"];
+    
+}
+@enduml

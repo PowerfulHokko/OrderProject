@@ -38,6 +38,8 @@ class CustomerServiceTest {
     @Test
     @DisplayName("Given all fields are filled in properly when creating two costumers with different emails, then succesfully create customers.")
     void givenAllFieldsFilled_whenCreatingTwoUniqueCustomer_thenSuccesfullyCreate(){
+        int intialSize = this.customerRepository.getCustomerMap().size();
+
         CreateCustomerDTO createCustomerDTO = new CreateCustomerDTO(
                 "Fred",
                 "Flinstone",
@@ -57,7 +59,7 @@ class CustomerServiceTest {
         CustomerDTO customerAccount = this.customerService.createCustomerAccount(createCustomerDTO);
         CustomerDTO customerAccount2 = this.customerService.createCustomerAccount(createCustomerDTO2);
 
-        assertEquals(2, this.customerRepository.getCustomerMap().keySet().size());
+        assertEquals(intialSize+2, this.customerRepository.getCustomerMap().keySet().size());
     }
 
     @Test

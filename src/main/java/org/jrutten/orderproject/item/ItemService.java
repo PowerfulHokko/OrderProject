@@ -2,6 +2,9 @@ package org.jrutten.orderproject.item;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.List;
+
 @Service
 public class ItemService {
     private final ItemMapper itemMapper;
@@ -14,8 +17,11 @@ public class ItemService {
 
     public ItemDTO addItem(CreateItemDTO createItemDTO) {
         Item item = this.itemMapper.toItem(createItemDTO);
-        this.itemRepository.addToRepository(item);
+        return this.itemMapper.toItemDTO(this.itemRepository.addToRepository(item));
+    }
 
-        return this.itemMapper.toItemDTO(item);
+    public List<ItemDTO> getAll() {
+        Collection<Item> items = this.itemRepository.getItemMap().values();
+        return this.itemMapper.mapListOfItemsToListOfItemDTO(items);
     }
 }

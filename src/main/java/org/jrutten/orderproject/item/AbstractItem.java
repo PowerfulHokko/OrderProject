@@ -14,7 +14,7 @@ public abstract class AbstractItem {
     public AbstractItem(String id, String name, String description, double price, int stock) {
         FieldValidators.guardStringNullAndBlank(name, description);
         FieldValidators.guardZeroOrLessThan((int) price);
-        FieldValidators.guardLessThanZero(stock);
+        //FieldValidators.guardLessThanZero(stock);
 
         this.itemId = id == null || id.isBlank() ? UUID.randomUUID().toString() : id;
         this.name = name;
@@ -48,7 +48,7 @@ public abstract class AbstractItem {
     }
 
     public void setStock(int stock) {
-        FieldValidators.guardLessThanZero(stock);
+        //FieldValidators.guardLessThanZero(stock);
         this.stock = stock;
     }
 

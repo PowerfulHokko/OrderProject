@@ -1,0 +1,8 @@
+2022-06-15 15:19:00.489  INFO 19488 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 265 ms
+2022-06-15 15:21:14.840  INFO 21176 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 21176 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
+2022-06-15 15:21:14.842  INFO 21176 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:21:15.490  INFO 21176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-15 15:21:15.504  INFO 21176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-15 15:21:15.505  INFO 21176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 15:21:15.579  INFO 21176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-15 15:21:15.579  INFO 21176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 710 ms
