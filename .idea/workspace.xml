@@ -5,33 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/AbstractCustomerWithID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/AbstractItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/CreateItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemControllerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/UnusedConvolutedItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/UnusedConvolutedItemRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/AbstractOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/appLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/AbstractCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/AbstractCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/fieldValidators/FieldValidators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/fieldValidators/FieldValidators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/customer/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/customer/CustomerServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -204,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655196163952</updated>
-      <workItem from="1655196166817" duration="27390000" />
+      <workItem from="1655196166817" duration="28521000" />
     </task>
     <servers />
   </component>
