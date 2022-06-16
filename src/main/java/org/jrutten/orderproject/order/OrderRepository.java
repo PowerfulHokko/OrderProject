@@ -1,5 +1,6 @@
 package org.jrutten.orderproject.order;
 
+import org.jrutten.orderproject.order.representations.Order;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;

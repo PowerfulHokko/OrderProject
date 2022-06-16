@@ -1,6 +1,6 @@
-package org.jrutten.orderproject.order;
+package org.jrutten.orderproject.order.representations;
 
-import org.jrutten.orderproject.item.Item;
+import org.jrutten.orderproject.item.representations.Item;
 
 public class OrderedItems {
     private final Item item;

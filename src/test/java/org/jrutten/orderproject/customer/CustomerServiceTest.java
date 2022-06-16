@@ -1,8 +1,14 @@
 package org.jrutten.orderproject.customer;
 
+import org.jrutten.orderproject.customer.representations.Address;
+import org.jrutten.orderproject.customer.representations.CreateCustomerDTO;
+import org.jrutten.orderproject.customer.representations.Customer;
+import org.jrutten.orderproject.customer.representations.CustomerDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -38,7 +44,7 @@ class CustomerServiceTest {
     @Test
     @DisplayName("Given all fields are filled in properly when creating two costumers with different emails, then succesfully create customers.")
     void givenAllFieldsFilled_whenCreatingTwoUniqueCustomer_thenSuccesfullyCreate(){
-        int intialSize = this.customerRepository.getCustomerMap().size();
+        int initialSize = this.customerRepository.getCustomerMap().size();
 
         CreateCustomerDTO createCustomerDTO = new CreateCustomerDTO(
                 "Fred",
@@ -59,7 +65,7 @@ class CustomerServiceTest {
         CustomerDTO customerAccount = this.customerService.createCustomerAccount(createCustomerDTO);
         CustomerDTO customerAccount2 = this.customerService.createCustomerAccount(createCustomerDTO2);
 
-        assertEquals(intialSize+2, this.customerRepository.getCustomerMap().keySet().size());
+        assertEquals(initialSize+2, this.customerRepository.getCustomerMap().keySet().size());
     }
 
     @Test
@@ -114,6 +120,31 @@ class CustomerServiceTest {
                     "No phones existed at the time"
             );
         });
+    }
+
+    @Test
+    @DisplayName("given an Id for an existing customer when searching, return this customer")
+    void givenAnId_whenCustomerExists_thenReturnCustomer(){
+        CreateCustomerDTO customerDTO = new CreateCustomerDTO(
+                "Fred",
+                "Flinstone",
+                "fred@stone.dk",
+                new Address("magmastreet", 2, "", 1, "Bedrock"),
+                "No phones existed at the time"
+        );
+
+        Customer customer = this.customerMapper.toCustomer(customerDTO);
+        this.customerRepository.registerCustomerAccount(customer);
+
+        CustomerDTO customerById = this.customerService.getCustomerById(customer.getId());
+
+        assertEquals(customer, customerById);
+    }
+
+    @Test
+    @DisplayName("given an Id for an non-existing customer when searching, throw NoSuchElementException")
+    void givenAnId_whenCustomerDoesNotExists_throwException(){
+        assertThrows(NoSuchElementException.class, () -> this.customerService.getCustomerById("EEEEEEEEEE"));
     }
 
 }

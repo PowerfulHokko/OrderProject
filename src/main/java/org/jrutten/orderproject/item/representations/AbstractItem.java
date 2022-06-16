@@ -1,4 +1,4 @@
-package org.jrutten.orderproject.item;
+package org.jrutten.orderproject.item.representations;
 
 import org.jrutten.orderproject.fieldValidators.FieldValidators;
 

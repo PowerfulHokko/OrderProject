@@ -1,5 +1,8 @@
 package org.jrutten.orderproject.item;
 
+import org.jrutten.orderproject.item.representations.CreateItemDTO;
+import org.jrutten.orderproject.item.representations.Item;
+import org.jrutten.orderproject.item.representations.ItemDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

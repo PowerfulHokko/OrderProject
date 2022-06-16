@@ -1,5 +1,7 @@
 package org.jrutten.orderproject.customer;
 
+import org.jrutten.orderproject.customer.representations.CreateCustomerDTO;
+import org.jrutten.orderproject.customer.representations.CustomerDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

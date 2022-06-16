@@ -1,10 +1,12 @@
 package org.jrutten.orderproject.order;
 
-import org.jrutten.orderproject.customer.Address;
-import org.jrutten.orderproject.customer.Customer;
+import org.jrutten.orderproject.customer.representations.Address;
+import org.jrutten.orderproject.customer.representations.Customer;
 import org.jrutten.orderproject.customer.CustomerRepository;
-import org.jrutten.orderproject.item.Item;
+import org.jrutten.orderproject.item.representations.Item;
 import org.jrutten.orderproject.item.ItemRepository;
+import org.jrutten.orderproject.order.representations.ItemsToOrderDTO;
+import org.jrutten.orderproject.order.representations.OrderDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

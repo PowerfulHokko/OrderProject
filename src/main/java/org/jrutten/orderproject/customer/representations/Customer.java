@@ -1,6 +1,4 @@
-package org.jrutten.orderproject.customer;
-
-import java.util.UUID;
+package org.jrutten.orderproject.customer.representations;
 
 public class Customer extends AbstractCustomerWithID {
     public Customer(String firstName, String lastName, String email, Address address, String phoneNumber) {

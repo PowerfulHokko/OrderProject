@@ -1,5 +1,7 @@
 package org.jrutten.orderproject.customer;
 
+import org.jrutten.orderproject.customer.representations.Address;
+import org.jrutten.orderproject.customer.representations.Customer;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;

@@ -1,4 +1,4 @@
-package org.jrutten.orderproject.customer;
+package org.jrutten.orderproject.customer.representations;
 
 import java.util.UUID;
 
@@ -29,4 +29,6 @@ public class AbstractCustomerWithID extends AbstractCustomer {
                 "id='" + id + '\'' + super.toString() +
                 '}';
     }
+
+
 }

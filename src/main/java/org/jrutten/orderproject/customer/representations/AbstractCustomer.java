@@ -1,4 +1,4 @@
-package org.jrutten.orderproject.customer;
+package org.jrutten.orderproject.customer.representations;
 
 import org.jrutten.orderproject.fieldValidators.FieldValidators;
 

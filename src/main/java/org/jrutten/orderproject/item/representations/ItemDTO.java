@@ -1,4 +1,4 @@
-package org.jrutten.orderproject.item;
+package org.jrutten.orderproject.item.representations;
 
 public class ItemDTO extends AbstractItem {
     public ItemDTO(String id, String name, String description, double price, int stock) {

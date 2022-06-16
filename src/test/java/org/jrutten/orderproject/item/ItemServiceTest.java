@@ -1,5 +1,7 @@
 package org.jrutten.orderproject.item;
 
+import org.jrutten.orderproject.item.representations.CreateItemDTO;
+import org.jrutten.orderproject.item.representations.ItemDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

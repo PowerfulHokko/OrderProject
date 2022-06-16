@@ -1,7 +1,6 @@
-package org.jrutten.orderproject.order;
+package org.jrutten.orderproject.order.representations;
 
-import org.jrutten.orderproject.item.Item;
-import org.jrutten.orderproject.item.ItemDTO;
+import org.jrutten.orderproject.item.representations.ItemDTO;
 
 import java.util.Objects;
 

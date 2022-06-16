@@ -1,10 +1,8 @@
 package org.jrutten.orderproject.item;
 
+import org.jrutten.orderproject.item.representations.Item;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayDeque;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 

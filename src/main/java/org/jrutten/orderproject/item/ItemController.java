@@ -1,6 +1,8 @@
 package org.jrutten.orderproject.item;
 
 import org.jrutten.orderproject.fieldValidators.FieldValidators;
+import org.jrutten.orderproject.item.representations.CreateItemDTO;
+import org.jrutten.orderproject.item.representations.ItemDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

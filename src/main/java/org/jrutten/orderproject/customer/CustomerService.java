@@ -1,8 +1,9 @@
 package org.jrutten.orderproject.customer;
 
+import org.jrutten.orderproject.customer.representations.CreateCustomerDTO;
+import org.jrutten.orderproject.customer.representations.Customer;
+import org.jrutten.orderproject.customer.representations.CustomerDTO;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 

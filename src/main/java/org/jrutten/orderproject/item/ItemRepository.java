@@ -1,7 +1,8 @@
 package org.jrutten.orderproject.item;
 
 import org.jrutten.orderproject.fieldValidators.FieldValidators;
-import org.jrutten.orderproject.order.ItemsToOrderDTO;
+import org.jrutten.orderproject.item.representations.Item;
+import org.jrutten.orderproject.order.representations.ItemsToOrderDTO;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;

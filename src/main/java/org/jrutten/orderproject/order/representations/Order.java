@@ -1,4 +1,4 @@
-package org.jrutten.orderproject.order;
+package org.jrutten.orderproject.order.representations;
 
 import java.time.LocalDate;
 import java.util.List;

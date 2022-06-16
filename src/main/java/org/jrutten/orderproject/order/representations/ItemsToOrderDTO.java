@@ -1,4 +1,4 @@
-package org.jrutten.orderproject.order;
+package org.jrutten.orderproject.order.representations;
 
 public class ItemsToOrderDTO {
     private final String itemId;

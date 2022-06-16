@@ -1,5 +1,8 @@
 package org.jrutten.orderproject.customer;
 
+import org.jrutten.orderproject.customer.representations.CreateCustomerDTO;
+import org.jrutten.orderproject.customer.representations.Customer;
+import org.jrutten.orderproject.customer.representations.CustomerDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
