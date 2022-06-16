@@ -50,4 +50,8 @@ public class OrderMapper {
     public List<OrderDTO> listOfOrdersToListOfOrderDto(List<Order> orders) {
         return orders.stream().map(o -> this.toOrderDTO(o)).collect(Collectors.toUnmodifiableList());
     }
+
+    public List<ItemsToOrderDTO> remapOrderedItemstoItemsToOrderDTO(List<OrderedItems> orderedItemsList) {
+        return orderedItemsList.stream().map(item -> new ItemsToOrderDTO(item.getItem().getItemId(), item.getAmount())).collect(Collectors.toUnmodifiableList());
+    }
 }

@@ -9,11 +9,11 @@ import java.util.logging.Logger;
 @Repository
 public class OrderRepository {
     private final Logger logger;
-    private final NavigableMap<String, HashMap<String, Order>> customerOrderMap;
+    private final Map<String, HashMap<String, Order>> customerOrderMap;
 
     public OrderRepository() {
         this.logger = Logger.getLogger(this.getClass().getName());
-        this.customerOrderMap = new TreeMap<>();
+        this.customerOrderMap = new HashMap<>();
     }
 
     public void placeOrder(Order order) {
@@ -38,5 +38,11 @@ public class OrderRepository {
     public List<Order> getOrdersByCustomerId(String id) {
         if(!this.customerOrderMap.containsKey(id)) return List.of();
         return this.customerOrderMap.get(id).values().stream().toList();
+    }
+
+    public Order getOrderById(String id, String order) throws NoSuchCustomerException, OrderNotOfCustomerException{
+        HashMap<String, Order> orderHashMap = Optional.ofNullable(this.customerOrderMap.get(id)).orElseThrow(NoSuchCustomerException::new);
+        Order order1 = Optional.ofNullable(orderHashMap.get(order)).orElseThrow(OrderNotOfCustomerException::new);
+        return Objects.requireNonNull(order1);
     }
 }

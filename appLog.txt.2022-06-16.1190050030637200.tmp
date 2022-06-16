@@ -1,4 +1,0 @@
-2022-06-16 13:36:08.811  WARN 18312 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-06-16 13:36:08.813  INFO 18312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
-2022-06-16 13:36:08.814  WARN 18312 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-06-16 13:36:08.814  INFO 18312 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']

@@ -1,1 +1,3 @@
-2022-06-16 14:05:09.313  WARN 13440 --- [http-nio-8080-exec-10] o.j.o.ControllerExceptionHandler         : Customer with following email was already registered: F.Frgess@lapd.com
+2022-06-16 16:47:39.667  INFO 25412 --- [http-nio-8080-exec-1] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
+2022-06-16 16:47:39.714  INFO 25412 --- [http-nio-8080-exec-1] o.j.orderproject.order.OrderService      : reorder request for customer: JD and order: 52b6
+2022-06-16 16:47:39.717  WARN 25412 --- [http-nio-8080-exec-1] o.j.o.ControllerExceptionHandler         : null

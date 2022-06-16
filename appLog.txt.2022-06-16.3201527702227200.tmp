@@ -1,0 +1,8 @@
+2022-06-16 16:47:26.483  WARN 25412 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-16 16:47:26.485  INFO 25412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2022-06-16 16:47:26.486  WARN 25412 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-16 16:47:26.486  INFO 25412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2022-06-16 16:47:26.486  WARN 25412 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-16 16:47:26.486  INFO 25412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2022-06-16 16:47:26.486  WARN 25412 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-06-16 16:47:26.486  INFO 25412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']

@@ -1,0 +1,3 @@
+2022-06-16 16:37:23.947  WARN 9976 --- [http-nio-8080-exec-4] o.j.o.ControllerExceptionHandler         : null
+2022-06-16 16:41:54.577  INFO 23612 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 23612 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
+2022-06-16 16:41:54.580  INFO 23612 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"

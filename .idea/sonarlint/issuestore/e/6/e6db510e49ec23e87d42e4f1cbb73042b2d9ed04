@@ -1,0 +1,5 @@
+
+{
+java:S6204"^Replace this usage of 'Stream.collect(Collectors.toUnmodifiableList())' with 'Stream.toList()'(´‘”÷8¥Ñ‚Ü–0
+Y
+java:S1612"<Replace this lambda with method reference 'this::toItemDTO'.(´‘”÷8¦Ñ‚Ü–0

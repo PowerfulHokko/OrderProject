@@ -1,1 +1,0 @@
-2022-06-16 13:37:31.964  INFO 19520 --- [http-nio-8080-exec-3] o.j.o.customer.CustomerController        : Post request for createCustomerAccount: AbstractCustomer{firstName='Fred', lastName='Freddy', email='F.Frgess@lapd.com', address=Address{street='Singer Boulevard', streetNumber=11, bus='2b', postalCode=119980, city='Los Angeles'}, phoneNumber='555-419-6267'}

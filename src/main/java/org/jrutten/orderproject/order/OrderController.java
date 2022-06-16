@@ -13,19 +13,19 @@ import java.util.logging.Logger;
 @RequestMapping("orders")
 public class OrderController {
     private final OrderService orderService;
-    private final Logger logger;
+
 
     public OrderController(OrderService orderService) {
         this.orderService = orderService;
-        this.logger = Logger.getLogger(this.getClass().getName());
     }
 
 
     @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping(path = "/{id}", consumes = "application/json", produces = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
-    public OrderDTO placeOrder(@PathVariable String id, @RequestBody List<ItemsToOrderDTO> orderList){
-        logger.info("Order request for " + id);
+    public OrderDTO placeOrder(@PathVariable String id, @RequestBody(required = false) List<ItemsToOrderDTO> orderList,@RequestParam(required = false, name = "orderid") String order){
+        if(order != null && !order.isBlank()) return this.orderService.reOrder(id, order);
+
         OrderDTO orderDTO = this.orderService.placeOrder(id, orderList);
         return orderDTO;
     }

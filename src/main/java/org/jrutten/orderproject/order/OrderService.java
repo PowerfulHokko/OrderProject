@@ -13,9 +13,11 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.logging.Logger;
 
 @Service
 public class OrderService {
+    private final Logger logger;
     private final OrderRepository orderRepository;
     private final CustomerRepository customerRepository;
     private final ItemRepository itemRepository;
@@ -23,6 +25,7 @@ public class OrderService {
     private final OrderMapper orderMapper;
 
     public OrderService(OrderRepository orderRepository, CustomerRepository customerRepository, ItemRepository itemRepository, OrderMapper orderMapper) {
+        this.logger = Logger.getLogger(this.getClass().getName());
         this.orderRepository = orderRepository;
         this.customerRepository = customerRepository;
         this.itemRepository = itemRepository;
@@ -30,6 +33,8 @@ public class OrderService {
     }
 
     public OrderDTO placeOrder(String customerId, List<ItemsToOrderDTO> orderList) {
+        checkIfOrderListIsPresentAndContainsValues(orderList);
+        logger.info("Order request for " + customerId);
         validateCustomer(customerId);
         validateItems(orderList);
 
@@ -42,6 +47,9 @@ public class OrderService {
         return this.orderMapper.toOrderDTO(order);
     }
 
+    private void checkIfOrderListIsPresentAndContainsValues(List<ItemsToOrderDTO> orderList) {
+        if(orderList == null || orderList.isEmpty()) throw new IllegalArgumentException("No orderlist defined");
+    }
 
 
     private LocalDate getShippingDate(List<ItemsToOrderDTO> orderList) {
@@ -78,5 +86,12 @@ public class OrderService {
         List<Order> orders = this.orderRepository.getOrdersByCustomerId(id);
 
         return this.orderMapper.listOfOrdersToListOfOrderDto(orders);
+    }
+
+    public OrderDTO reOrder(String id, String order) {
+        logger.info("reorder request for customer: " + id + " and order: " + order);
+        Order oldOrder = this.orderRepository.getOrderById(id, order);
+        List<ItemsToOrderDTO> itemsToOrderDTOList = this.orderMapper.remapOrderedItemstoItemsToOrderDTO(oldOrder.getOrderedItemsList());
+        return this.placeOrder(id, itemsToOrderDTOList);
     }
 }
