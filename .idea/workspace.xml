@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/appLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/AbstractItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/AbstractItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderedItemsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderedItemsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/OrderServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,22 +104,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest.givenANewItemButWithSameNameAsOldWhenCreatingThenThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OrderProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.item.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
-      <option name="METHOD_NAME" value="givenANewItemButWithSameNameAsOldWhenCreatingThenThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ItemServiceTest.givenANewItemForNonExistentId_whenPatch_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
@@ -128,22 +115,6 @@
       <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
       <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
       <option name="METHOD_NAME" value="givenANewItemForNonExistentId_whenPatch_throwException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ItemServiceTest.givenANewItem_whenAddingNewItem_thenOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OrderProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.item.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
-      <option name="METHOD_NAME" value="givenANewItem_whenAddingNewItem_thenOK" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,13 +136,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderServiceTest.givenACustomerWithNoOrders_whenGettingTheOrders_returnEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OrderProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
+      <option name="METHOD_NAME" value="givenACustomerWithNoOrders_whenGettingTheOrders_returnEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.givenACustomerWithSomeOrders_whenGettingTheOrders_returnListOfTheseOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OrderProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
+      <option name="METHOD_NAME" value="givenACustomerWithSomeOrders_whenGettingTheOrders_returnListOfTheseOrders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in OrderProject" />
+        <item itemvalue="JUnit.OrderServiceTest.givenACustomerWithSomeOrders_whenGettingTheOrders_returnListOfTheseOrders" />
+        <item itemvalue="JUnit.OrderServiceTest.givenACustomerWithNoOrders_whenGettingTheOrders_returnEmptyList" />
         <item itemvalue="JUnit.ItemServiceTest.givenANewItemForNonExistentId_whenPatch_throwException" />
         <item itemvalue="JUnit.ItemServiceTest.givenNewItemForExistingId_whenPatch_thenOK" />
-        <item itemvalue="JUnit.ItemServiceTest.givenANewItemButWithSameNameAsOldWhenCreatingThenThrowException" />
-        <item itemvalue="JUnit.ItemServiceTest.givenANewItem_whenAddingNewItem_thenOK" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +186,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655196163952</updated>
-      <workItem from="1655196166817" duration="50568000" />
+      <workItem from="1655196166817" duration="56503000" />
     </task>
     <servers />
   </component>

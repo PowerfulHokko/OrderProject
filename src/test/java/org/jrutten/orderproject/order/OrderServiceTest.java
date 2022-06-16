@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -49,7 +50,62 @@ class OrderServiceTest {
         assertTrue(orderDTO.getCustomerId().equals(customer.getId()));
     }
 
+    @Test
+    void givenACustomerWithNoOrders_whenGettingTheOrders_returnEmptyList(){
+        Address address = new Address("lane",3,"b", 3000, "L-city");
+        Customer customer = new Customer("ID123", "Jason", "Bourne", "jb@cia.gov", address, "555");
+        this.customerRepository.registerCustomerAccount(customer);
 
+        List<OrderDTO> allByCustomerId = this.orderService.getAllByCustomerId(customer.getId());
+
+        assertTrue(allByCustomerId.size() == 0);
+    }
+
+    @Test
+    void givenACustomerWithSomeOrders_whenGettingTheOrders_returnListOfTheseOrders(){
+        Address address = new Address("lane",3,"b", 3000, "L-city");
+        Customer customer = new Customer("ID123", "Jason", "Bourne", "jb@cia.gov", address, "555");
+        this.customerRepository.registerCustomerAccount(customer);
+
+        Item item1 = new Item("sc55", "item1", "2 wheels", 20, 2);
+        Item item2 = new Item("sc66", "item2", "2 wheels", 20, 2);
+        Item item3 = new Item("sc77", "item3", "2 wheels", 20, 4);
+        this.itemRepository.addToRepository(item1);
+         this.itemRepository.addToRepository(item2);
+         this.itemRepository.addToRepository(item3);
+
+        List<ItemsToOrderDTO> itemsForOrder1 = new ArrayList<>();
+        itemsForOrder1.add(new ItemsToOrderDTO("sc55", 1));
+
+        List<ItemsToOrderDTO> itemsForOrder2 = new ArrayList<>();
+        itemsForOrder2.add(new ItemsToOrderDTO("sc66", 1));
+        itemsForOrder2.add(new ItemsToOrderDTO("sc77", 2));
+
+        List<ItemsToOrderDTO> itemsForOrder3 = new ArrayList<>();
+        itemsForOrder3.add(new ItemsToOrderDTO("sc55", 1));
+        itemsForOrder3.add(new ItemsToOrderDTO("sc66", 1));
+        itemsForOrder3.add(new ItemsToOrderDTO("sc77", 2));
+
+        OrderDTO orderDTO1 = this.orderService.placeOrder(customer.getId(), itemsForOrder1);
+        OrderDTO orderDTO2 = this.orderService.placeOrder(customer.getId(), itemsForOrder2);
+        OrderDTO orderDTO3 = this.orderService.placeOrder(customer.getId(), itemsForOrder3);
+
+        List<OrderDTO> allByCustomerId = this.orderService.getAllByCustomerId(customer.getId());
+
+        boolean checkOrder1 = allByCustomerId.stream().anyMatch(order -> order.equals(orderDTO1));
+        boolean checkOrder2 = allByCustomerId.stream().anyMatch(order -> order.equals(orderDTO2));
+        boolean checkOrder3 = allByCustomerId.stream().anyMatch(order -> order.equals(orderDTO3));
+
+        assertTrue(checkOrder1);
+        assertTrue(checkOrder2);
+        assertTrue(checkOrder3);
+
+    }
+
+    @Test
+    void givenANonExistentCustomer_whenRequestingAllOrders_thenThrowNoSuchElementException(){
+        assertThrows(NoSuchElementException.class, () -> this.orderService.getAllByCustomerId("thisonedoesnormallynotexist"));
+    }
 
 
 

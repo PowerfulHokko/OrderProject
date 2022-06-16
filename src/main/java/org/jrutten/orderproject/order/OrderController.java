@@ -29,6 +29,13 @@ public class OrderController {
         return orderDTO;
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
+    @GetMapping(path = "/{id}", produces = "application/json")
+    @ResponseStatus(HttpStatus.CREATED)
+    public List<OrderDTO> getAllOrdersFromCustomer(@PathVariable String id){
+        return this.orderService.getAllByCustomerId(id);
+    }
+
 
 }
 

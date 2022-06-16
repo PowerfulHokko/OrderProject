@@ -1,7 +1,9 @@
 package org.jrutten.orderproject.order;
 
 import java.time.LocalDate;
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 public class OrderDTO {
@@ -32,7 +34,7 @@ public class OrderDTO {
     }
 
     public List<OrderedItemsDTO> getOrderedItemsList() {
-        return orderedItemsList;
+        return Collections.unmodifiableList(orderedItemsList);
     }
 
     public LocalDate getShippingDate() {
@@ -41,5 +43,36 @@ public class OrderDTO {
 
     public double getAmountToPay() {
         return amountToPay;
+    }
+
+
+    @Override
+    public String toString() {
+        return "OrderDTO{" +
+                "orderId='" + orderId + '\'' +
+                ", customerId='" + customerId + '\'' +
+                ", orderedItemsList=" + orderedItemsList +
+                ", shippingDate=" + shippingDate +
+                ", amountToPay=" + amountToPay +
+                '}';
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof OrderDTO)) return false;
+        OrderDTO orderDTO = (OrderDTO) o;
+        return Double.compare(orderDTO.amountToPay, amountToPay) == 0 && Objects.equals(orderId, orderDTO.orderId) && Objects.equals(customerId, orderDTO.customerId) && checkIfListsAreEquals(orderedItemsList, orderDTO.orderedItemsList) && Objects.equals(shippingDate, orderDTO.shippingDate);
+    }
+
+    private boolean checkIfListsAreEquals(List<OrderedItemsDTO> orderedItemsList, List<OrderedItemsDTO> orderedItemsList1) {
+        if(orderedItemsList.size() != orderedItemsList1.size()) return false;
+        return orderedItemsList.stream().noneMatch(order -> orderedItemsList1.stream().noneMatch(order2 -> order2.equals(order)));
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(orderId, customerId, orderedItemsList, shippingDate, amountToPay);
     }
 }

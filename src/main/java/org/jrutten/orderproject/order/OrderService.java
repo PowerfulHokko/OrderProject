@@ -1,6 +1,7 @@
 package org.jrutten.orderproject.order;
 
 import org.jrutten.orderproject.customer.CustomerRepository;
+import org.jrutten.orderproject.fieldValidators.FieldValidators;
 import org.jrutten.orderproject.item.Item;
 import org.jrutten.orderproject.item.ItemRepository;
 import org.springframework.stereotype.Service;
@@ -65,5 +66,14 @@ public class OrderService {
         if (! this.customerRepository.getCustomerMap().containsKey(customerId)) {
             throw new NoSuchElementException("No client with id" + customerId);
         }
+    }
+
+    public List<OrderDTO> getAllByCustomerId(String id) {
+        FieldValidators.guardStringNullAndBlank(id);
+        validateCustomer(id);
+
+        List<Order> orders = this.orderRepository.getOrdersByCustomerId(id);
+
+        return this.orderMapper.listOfOrdersToListOfOrderDto(orders);
     }
 }

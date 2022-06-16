@@ -45,4 +45,8 @@ public class OrderMapper {
     private ItemDTO toItemDTO(Item item) {
         return new ItemDTO(item.getItemId(), item.getName(), item.getDescription(), item.getPrice(), item.getStock());
     }
+
+    public List<OrderDTO> listOfOrdersToListOfOrderDto(List<Order> orders) {
+        return orders.stream().map(o -> this.toOrderDTO(o)).collect(Collectors.toUnmodifiableList());
+    }
 }
