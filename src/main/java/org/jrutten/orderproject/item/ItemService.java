@@ -24,4 +24,9 @@ public class ItemService {
         Collection<Item> items = this.itemRepository.getItemMap().values();
         return this.itemMapper.mapListOfItemsToListOfItemDTO(items);
     }
+
+    public ItemDTO updateItem(String itemid, CreateItemDTO itemDTO) {
+        Item item = this.itemMapper.toItem(itemDTO, itemid);
+        return this.itemMapper.toItemDTO(this.itemRepository.updateItemInRepository(item));
+    }
 }

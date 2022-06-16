@@ -38,7 +38,7 @@ class ItemRepositoryTest {
     }
 
     @Test
-    void givenTwoItemsSameNameButDifferentId_thenUpdateFirst(){
+    void givenTwoItemsSameNameButDifferentId_whenPost_thenthrowException(){
         int item1Stock = 5;
         int item2Stock = 3;
 
@@ -46,12 +46,8 @@ class ItemRepositoryTest {
         Item item2 = new Item("ab","Apple", "An apple", 1.80, item2Stock);
 
         itemRepository.addToRepository(item);
-        itemRepository.addToRepository(item2);
 
-        assertTrue(this.itemRepository.getItemMap().containsKey(item.getItemId()));
-        assertEquals(item2.getPrice(), this.itemRepository.getItemMap().get(item.getItemId()).getPrice());        assertEquals(item2.getPrice(), this.itemRepository.getItemMap().get(item.getItemId()).getPrice());
-        assertEquals((item1Stock + item2Stock), this.itemRepository.getItemMap().get(item.getItemId()).getStock());
-
+        assertThrows(IllegalArgumentException.class, () -> itemRepository.addToRepository(item2));
     }
 
 }

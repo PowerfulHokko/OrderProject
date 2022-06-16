@@ -33,4 +33,14 @@ public class ItemController {
     public List<ItemDTO> getAll(){
         return this.itemService.getAll();
     }
+
+
+    @PatchMapping(path ="/{itemid}" ,produces = "application/json", consumes = "application/json")
+    @PreAuthorize("hasAuthority('ADMIN')")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public ItemDTO updateItem(@PathVariable String itemid, @RequestBody CreateItemDTO itemDTO){
+        return this.itemService.updateItem(itemid, itemDTO);
+    }
+
+
 }

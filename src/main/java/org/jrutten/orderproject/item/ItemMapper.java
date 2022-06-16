@@ -12,6 +12,10 @@ public class ItemMapper {
         return new Item(createItemDTO.getItemId(), createItemDTO.getName(), createItemDTO.getDescription(), createItemDTO.getPrice(), createItemDTO.getStock());
     }
 
+    public Item toItem(CreateItemDTO createItemDTO, String idForUpdate) {
+        return new Item(idForUpdate, createItemDTO.getName(), createItemDTO.getDescription(), createItemDTO.getPrice(), createItemDTO.getStock());
+    }
+
     public ItemDTO toItemDTO(Item item) {
         return new ItemDTO(item.getItemId(), item.getName(), item.getDescription(), item.getPrice(), item.getStock());
     }

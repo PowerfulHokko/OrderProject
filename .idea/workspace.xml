@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/appLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -80,8 +87,8 @@
       <recent name="org.jrutten.orderproject" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.jrutten.orderproject.order" />
       <recent name="org.jrutten.orderproject.item" />
+      <recent name="org.jrutten.orderproject.order" />
       <recent name="org.jrutten.orderproject.customer" />
     </key>
   </component>
@@ -94,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemServiceTest.givenANewItemButWithSameNameAsOldWhenCreatingThenThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
+      <option name="METHOD_NAME" value="givenANewItemButWithSameNameAsOldWhenCreatingThenThrowException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemRepositoryTest.givenNoItemsInStock_whenAddingAnItem_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemServiceTest.givenANewItemForNonExistentId_whenPatch_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
@@ -118,38 +126,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemRepositoryTest" />
-      <option name="METHOD_NAME" value="givenNoItemsInStock_whenAddingAnItem_ok" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
+      <option name="METHOD_NAME" value="givenANewItemForNonExistentId_whenPatch_throwException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest.givenAValidOrder_whenPlacingOrder_thenSubtractItemsFromItemRepositoryAndReturnOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemServiceTest.givenANewItem_whenAddingNewItem_thenOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.item.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
-      <option name="METHOD_NAME" value="givenAValidOrder_whenPlacingOrder_thenSubtractItemsFromItemRepositoryAndReturnOrder" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
+      <option name="METHOD_NAME" value="givenANewItem_whenAddingNewItem_thenOK" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderProjectAppRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemServiceTest.givenNewItemForExistingId_whenPatch_thenOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.jrutten.orderproject.OrderProjectAppRunner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.item.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
+      <option name="METHOD_NAME" value="givenNewItemForExistingId_whenPatch_thenOK" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in OrderProject" />
-        <item itemvalue="JUnit.OrderServiceTest.givenAValidOrder_whenPlacingOrder_thenSubtractItemsFromItemRepositoryAndReturnOrder" />
-        <item itemvalue="Spring Boot.OrderProjectAppRunner" />
-        <item itemvalue="JUnit.ItemRepositoryTest" />
-        <item itemvalue="JUnit.ItemRepositoryTest.givenNoItemsInStock_whenAddingAnItem_ok" />
+        <item itemvalue="JUnit.ItemServiceTest.givenANewItemForNonExistentId_whenPatch_throwException" />
+        <item itemvalue="JUnit.ItemServiceTest.givenNewItemForExistingId_whenPatch_thenOK" />
+        <item itemvalue="JUnit.ItemServiceTest.givenANewItemButWithSameNameAsOldWhenCreatingThenThrowException" />
+        <item itemvalue="JUnit.ItemServiceTest.givenANewItem_whenAddingNewItem_thenOK" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655196163952</updated>
-      <workItem from="1655196166817" duration="47385000" />
+      <workItem from="1655196166817" duration="50568000" />
     </task>
     <servers />
   </component>

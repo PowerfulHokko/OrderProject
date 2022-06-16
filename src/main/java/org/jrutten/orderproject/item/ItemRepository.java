@@ -38,17 +38,21 @@ public class ItemRepository {
         FieldValidators.guardZeroOrLessThan((int) item.getPrice());
 
         String id = getItemIDFromMapBasedOnIDorNameReturnBlankIfNotFound(item);
-        Item returnToFront = null;
 
-        if(!id.equals("")){
-            logger.info("Put on ID: " + id);
-            returnToFront = updateCurrentItemInMap(item, id);
-        } else {
-            this.itemMap.put(item.getItemId(), item);
-            returnToFront = this.itemMap.get(item.getItemId());
-        }
+        if(!id.equals("")) guardAgainstUnwantedDuplicates(id);
 
-        return returnToFront;
+        this.itemMap.put(item.getItemId(), item);
+        return this.itemMap.get(item.getItemId());
+    }
+
+    private void guardAgainstUnwantedDuplicates(String id) {
+            String errorMessage = new StringBuilder()
+                    .append("An item named: " + this.itemMap.get(id))
+                    .append(" already exists with id: " + id)
+                    .append(" -- ")
+                    .append("consider using other params or use the patch method to update")
+                    .toString();
+            throw new IllegalArgumentException(errorMessage);
     }
 
     private Item updateCurrentItemInMap(Item item, String id) {
@@ -80,5 +84,11 @@ public class ItemRepository {
 
     public void removeOrderedItems(List<ItemsToOrderDTO> orderList) {
         orderList.stream().forEach(item -> this.itemMap.get(item.getItemId()).setStock(this.itemMap.get(item.getItemId()).getStock() - item.getRequestedAmount()));
+    }
+
+    public Item updateItemInRepository(Item item) {
+        if(!this.itemMap.containsKey(item.getItemId())) throw new IllegalArgumentException("No id: " + item.getItemId() + " found");
+        this.itemMap.replace(item.getItemId(), item);
+        return this.itemMap.get(item.getItemId());
     }
 }
