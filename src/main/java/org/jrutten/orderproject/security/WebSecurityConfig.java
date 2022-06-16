@@ -1,6 +1,7 @@
 package org.jrutten.orderproject.security;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -25,8 +26,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/swagger-ui/**",
                 "/swagger*/**",
                 "/v3/api-docs/**",
-                "/webjars/**",
-                "/customers*/**");
+                "/webjars/**")
+                .and()
+                .ignoring().antMatchers(HttpMethod.POST, "/customers");
     }
 
     private JwtAuthenticationConverter jwtAuthenticationConverter() {

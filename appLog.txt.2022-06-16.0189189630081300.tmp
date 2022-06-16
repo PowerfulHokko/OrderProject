@@ -1,0 +1,7 @@
+2022-06-16 09:33:55.056  WARN 27420 --- [http-nio-8080-exec-3] o.j.o.ControllerExceptionHandler         : An item named: BEER already exists with id: 5135b26d-18de-4032-855a-06ea4f47bdaa
+consider using another name or use the patch method to update
+2022-06-16 13:21:47.642  INFO 27124 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 27124 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
+2022-06-16 13:21:47.644  INFO 27124 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"
+2022-06-16 13:21:48.328  INFO 27124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-16 13:21:48.334  INFO 27124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-16 13:21:48.335  INFO 27124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]

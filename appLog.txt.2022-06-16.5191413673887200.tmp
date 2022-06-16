@@ -1,0 +1,2 @@
+2022-06-16 13:58:21.314  INFO 14260 --- [http-nio-8080-exec-1] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
+2022-06-16 13:58:21.330  WARN 14260 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

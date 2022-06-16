@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
@@ -22,6 +23,14 @@ public class CustomerController {
     public CustomerDTO createCustomerAccount(@RequestBody CreateCustomerDTO createCustomerDTO){
         logger.info("Post request for createCustomerAccount: " + createCustomerDTO.toString() );
         return this.customerService.createCustomerAccount(createCustomerDTO);
+    }
+
+    @PreAuthorize("hasAuthority('ADMIN')")
+    @GetMapping(value = {"", "/{id}"},produces = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public List<CustomerDTO> getCustomers(@PathVariable(required = false) String id){
+        if(id != null && !id.isBlank()) return List.of(this.customerService.getCustomerById(id));
+        return this.customerService.getAllCustomers();
     }
 
 

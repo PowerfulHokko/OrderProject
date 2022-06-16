@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.List;
+
 @Service
 public class CustomerService {
     private final CustomerRepository customerRepository;
@@ -22,5 +24,13 @@ public class CustomerService {
         this.customerRepository.registerCustomerAccount(customer);
 
         return customerDTO;
+    }
+
+    public List<CustomerDTO> getAllCustomers() {
+        return this.customerMapper.toCustomerDTO(this.customerRepository.getAllCustomers());
+    }
+
+    public CustomerDTO getCustomerById(String id) {
+        return this.customerMapper.toCustomerDTO(this.customerRepository.getCustomerById(id));
     }
 }

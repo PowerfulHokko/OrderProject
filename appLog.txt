@@ -1,2 +1,1 @@
-2022-06-16 09:33:55.056  WARN 27420 --- [http-nio-8080-exec-3] o.j.o.ControllerExceptionHandler         : An item named: BEER already exists with id: 5135b26d-18de-4032-855a-06ea4f47bdaa
-consider using another name or use the patch method to update
+2022-06-16 14:05:09.313  WARN 13440 --- [http-nio-8080-exec-10] o.j.o.ControllerExceptionHandler         : Customer with following email was already registered: F.Frgess@lapd.com

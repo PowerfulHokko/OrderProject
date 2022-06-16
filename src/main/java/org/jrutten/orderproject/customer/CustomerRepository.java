@@ -2,9 +2,7 @@ package org.jrutten.orderproject.customer;
 
 import org.springframework.stereotype.Repository;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Logger;
 
 @Repository
@@ -43,5 +41,17 @@ public class CustomerRepository {
 
     public Map<String, Customer> getCustomerMap() {
         return Collections.unmodifiableMap(this.customerMap);
+    }
+
+    public List<Customer> getAllCustomers() {
+      return this.customerMap.values().stream().toList();
+    }
+
+    public Customer getCustomerById(String id) {
+        if(this.customerMap.containsKey(id)){
+            return this.customerMap.get(id);
+        }
+
+        throw new NoSuchElementException("No customer with id: " + id);
     }
 }

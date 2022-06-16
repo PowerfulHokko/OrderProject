@@ -203,6 +203,7 @@ CustomerRepository1737554367[
 <TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
 <HR/>
 <TR><TD ALIGN="LEFT" >- checkCustomerInMap(customer: Customer)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getCustomerById(id: String): Customer</TD></TR>
 <TR><TD ALIGN="LEFT" >- initMap()</TD></TR>
 <TR><TD ALIGN="LEFT" >+ registerCustomerAccount(customer: Customer)</TD></TR>
 </TABLE>>
@@ -257,9 +258,11 @@ ItemRepository895683956[
 <HR/>
 <TR><TD ALIGN="LEFT" >+ addToRepository(item: Item): Item</TD></TR>
 <TR><TD ALIGN="LEFT" >- getItemIDFromMapBasedOnIDorNameReturnBlankIfNotFound(item: Item): String</TD></TR>
+<TR><TD ALIGN="LEFT" >- guardAgainstUnwantedDuplicates(id: String)</TD></TR>
 <TR><TD ALIGN="LEFT" >- initMap()</TD></TR>
 <TR><TD ALIGN="LEFT" >+ removeOrderedItems(orderList: List&lt;ItemsToOrderDTO&gt;)</TD></TR>
 <TR><TD ALIGN="LEFT" >- updateCurrentItemInMap(item: Item, id: String): Item</TD></TR>
+<TR><TD ALIGN="LEFT" >+ updateItemInRepository(item: Item): Item</TD></TR>
 </TABLE>>
 	style=filled
 	margin=0
@@ -293,6 +296,7 @@ OrderController2001879309[
 <TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
 <TR><TD ALIGN="LEFT" >-   orderService: OrderService [0..1]</TD></TR>
 <HR/>
+<TR><TD ALIGN="LEFT" >+ getAllOrdersFromCustomer(id: String): List&lt;OrderDTO&gt;</TD></TR>
 <TR><TD ALIGN="LEFT" >+ placeOrder(id: String, orderList: List&lt;ItemsToOrderDTO&gt;): OrderDTO</TD></TR>
 </TABLE>>
 	style=filled
@@ -307,6 +311,7 @@ OrderMapper2001879309[
 <HR/>
 <TR><TD ALIGN="LEFT" >-   itemRepository: ItemRepository [0..1]</TD></TR>
 <HR/>
+<TR><TD ALIGN="LEFT" >+ listOfOrdersToListOfOrderDto(orders: List&lt;Order&gt;): List&lt;OrderDTO&gt;</TD></TR>
 <TR><TD ALIGN="LEFT" >- mapItemsToOrderListToOrderedList(orderList: List&lt;ItemsToOrderDTO&gt;): List&lt;OrderedItems&gt;</TD></TR>
 <TR><TD ALIGN="LEFT" >- mapToOrderedItemsDTOList(orderedItemsList: List&lt;OrderedItems&gt;): List&lt;OrderedItemsDTO&gt;</TD></TR>
 <TR><TD ALIGN="LEFT" >- toItemDTO(item: Item): ItemDTO</TD></TR>
@@ -327,6 +332,7 @@ OrderRepository2001879309[
 <TR><TD ALIGN="LEFT" >-   logger: Logger [0..1]</TD></TR>
 <HR/>
 <TR><TD ALIGN="LEFT" >- checkOverwriteAttemptOnOrderForClient(order: Order)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getOrdersByCustomerId(id: String): List&lt;Order&gt;</TD></TR>
 <TR><TD ALIGN="LEFT" >+ placeOrder(order: Order)</TD></TR>
 </TABLE>>
 	style=filled
@@ -344,6 +350,7 @@ OrderService2001879309[
 <TR><TD ALIGN="LEFT" >-   orderMapper: OrderMapper [0..1]</TD></TR>
 <TR><TD ALIGN="LEFT" >-   orderRepository: OrderRepository [0..1]</TD></TR>
 <HR/>
+<TR><TD ALIGN="LEFT" >+ getAllByCustomerId(id: String): List&lt;OrderDTO&gt;</TD></TR>
 <TR><TD ALIGN="LEFT" >- getShippingDate(orderList: List&lt;ItemsToOrderDTO&gt;): LocalDate</TD></TR>
 <TR><TD ALIGN="LEFT" >+ placeOrder(customerId: String, orderList: List&lt;ItemsToOrderDTO&gt;): OrderDTO</TD></TR>
 <TR><TD ALIGN="LEFT" >- validateCustomer(customerId: String)</TD></TR>
@@ -395,6 +402,7 @@ OrderRepository2001879309 -> Order2001879309[label="customerOrderMap
 [0..*]"];
 OrderService2001879309 -> CustomerRepository1737554367[label="customerRepository
 [0..1]"];
+OrderService2001879309 -> FieldValidators194690310[label="getAllByCustomerId() -> guardStringNullAndBlank()"];
 OrderService2001879309 -> ItemRepository895683956[label="itemRepository
 [0..1]"];
 OrderService2001879309 -> OrderMapper2001879309[label="orderMapper

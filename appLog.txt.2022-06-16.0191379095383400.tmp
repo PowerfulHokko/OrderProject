@@ -1,0 +1,9 @@
+2022-06-16 13:57:14.819  INFO 26868 --- [http-nio-8080-exec-2] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
+2022-06-16 13:57:14.834  WARN 26868 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-06-16 13:58:16.543  INFO 14260 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 14260 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
+2022-06-16 13:58:16.545  INFO 14260 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"
+2022-06-16 13:58:17.197  INFO 14260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-16 13:58:17.203  INFO 14260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-16 13:58:17.203  INFO 14260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-16 13:58:17.276  INFO 14260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-16 13:58:17.276  INFO 14260 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 697 ms
