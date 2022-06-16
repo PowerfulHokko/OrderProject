@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/appLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService_structure.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService_structure.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/WebSecurityConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +83,7 @@
       <recent name="org.jrutten.orderproject.customer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in OrderProject">
+  <component name="RunManager" selected="JUnit.ItemServiceTest.givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO">
     <configuration name="All in OrderProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -117,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest.givenNewItemForExistingId_whenPatch_thenOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemServiceTest.givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
       <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
-      <option name="METHOD_NAME" value="givenNewItemForExistingId_whenPatch_thenOK" />
+      <option name="METHOD_NAME" value="givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemServiceTest.givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO" />
         <item itemvalue="JUnit.All in OrderProject" />
         <item itemvalue="JUnit.OrderServiceTest.givenACustomerWithSomeOrders_whenGettingTheOrders_returnListOfTheseOrders" />
         <item itemvalue="JUnit.OrderServiceTest.givenACustomerWithNoOrders_whenGettingTheOrders_returnEmptyList" />
         <item itemvalue="JUnit.ItemServiceTest.givenANewItemForNonExistentId_whenPatch_throwException" />
-        <item itemvalue="JUnit.ItemServiceTest.givenNewItemForExistingId_whenPatch_thenOK" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655196163952</updated>
-      <workItem from="1655196166817" duration="59975000" />
+      <workItem from="1655196166817" duration="60829000" />
     </task>
     <servers />
   </component>

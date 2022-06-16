@@ -59,4 +59,9 @@ class ItemServiceTest {
         assertThrows(IllegalArgumentException.class, () -> this.itemService.updateItem("absoluteboggerid", newItem));
     }
 
+    @Test
+    void givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO(){
+        assertNotEquals(0, this.itemService.getAll().size());
+    }
+
 }
