@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/representations/OrderDTOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/0943b892b8d4b33f6ad6bb465380d5f55d331367" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bf8b1ccaa2ce3d6a0ec55d8bc84a03f347d0672" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f13d10163e71aa282063d6dc40c4bc9e16b351e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/AbstractItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/AbstractItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -82,6 +89,7 @@
       <recent name="org.jrutten.orderproject" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.jrutten.orderproject.order.representations" />
       <recent name="org.jrutten.orderproject.item" />
       <recent name="org.jrutten.orderproject.order" />
       <recent name="org.jrutten.orderproject.customer" />
@@ -96,65 +104,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemRepositoryTest.givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderDTOTest.givenAllFieldsFilled_whenCreatingANewOrderDTO_thenOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.item.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.order.representations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemRepositoryTest" />
-      <option name="METHOD_NAME" value="givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order.representations" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.representations.OrderDTOTest" />
+      <option name="METHOD_NAME" value="givenAllFieldsFilled_whenCreatingANewOrderDTO_thenOK" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemRepositoryTest.givenNewItemWithNonExistentId_whenInPatchMode_thenThrowNoSuchElementException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderDTOTest.givenAmountToPayForSomeReasonIsZero_whenCreatingANewOrderDTO_throwIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.item.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.order.representations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemRepositoryTest" />
-      <option name="METHOD_NAME" value="givenNewItemWithNonExistentId_whenInPatchMode_thenThrowNoSuchElementException" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order.representations" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.representations.OrderDTOTest" />
+      <option name="METHOD_NAME" value="givenAmountToPayForSomeReasonIsZero_whenCreatingANewOrderDTO_throwIllegalArgumentException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest.givenAClientWithNoOrders_butReorder_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderDTOTest.givenTwoListsOfOrderedItemsDTO_whenBothListsContainTheSameItemsExceptForPrice_returnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.order.representations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
-      <option name="METHOD_NAME" value="givenAClientWithNoOrders_butReorder_throwException" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order.representations" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.representations.OrderDTOTest" />
+      <option name="METHOD_NAME" value="givenTwoListsOfOrderedItemsDTO_whenBothListsContainTheSameItemsExceptForPrice_returnTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest.givenAClientWithOrders_butReorderOrderNotOfClient_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderDTOTest.givenTwoListsOfOrderedItemsDTO_whenBothListsDONOTContainTheSameItemsExceptForPrice_returnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.order.representations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
-      <option name="METHOD_NAME" value="givenAClientWithOrders_butReorderOrderNotOfClient_throwException" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order.representations" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.representations.OrderDTOTest" />
+      <option name="METHOD_NAME" value="givenTwoListsOfOrderedItemsDTO_whenBothListsDONOTContainTheSameItemsExceptForPrice_returnFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,10 +171,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in OrderProject" />
-        <item itemvalue="JUnit.ItemRepositoryTest.givenNewItemWithNonExistentId_whenInPatchMode_thenThrowNoSuchElementException" />
-        <item itemvalue="JUnit.ItemRepositoryTest.givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite" />
-        <item itemvalue="JUnit.OrderServiceTest.givenAClientWithNoOrders_butReorder_throwException" />
-        <item itemvalue="JUnit.OrderServiceTest.givenAClientWithOrders_butReorderOrderNotOfClient_throwException" />
+        <item itemvalue="JUnit.OrderDTOTest.givenTwoListsOfOrderedItemsDTO_whenBothListsContainTheSameItemsExceptForPrice_returnTrue" />
+        <item itemvalue="JUnit.OrderDTOTest.givenTwoListsOfOrderedItemsDTO_whenBothListsDONOTContainTheSameItemsExceptForPrice_returnFalse" />
+        <item itemvalue="JUnit.OrderDTOTest.givenAmountToPayForSomeReasonIsZero_whenCreatingANewOrderDTO_throwIllegalArgumentException" />
+        <item itemvalue="JUnit.OrderDTOTest.givenAllFieldsFilled_whenCreatingANewOrderDTO_thenOK" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +188,7 @@
       <updated>1655196163952</updated>
       <workItem from="1655196166817" duration="67498000" />
       <workItem from="1655389475915" duration="1403000" />
-      <workItem from="1655449337541" duration="3289000" />
+      <workItem from="1655449337541" duration="4912000" />
     </task>
     <servers />
   </component>

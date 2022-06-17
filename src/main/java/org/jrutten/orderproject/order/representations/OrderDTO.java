@@ -1,5 +1,7 @@
 package org.jrutten.orderproject.order.representations;
 
+import org.jrutten.orderproject.fieldValidators.FieldValidators;
+
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
@@ -14,6 +16,7 @@ public class OrderDTO {
     private final double amountToPay;
 
     public OrderDTO(String orderId, String customerId, List<OrderedItemsDTO> orderedItemsList, LocalDate shippingDate, double amountToPay) {
+        FieldValidators.guardZeroOrLessThan((int) amountToPay);
         this.orderId = orderId;
         this.customerId = customerId;
         this.orderedItemsList = orderedItemsList;
@@ -63,13 +66,13 @@ public class OrderDTO {
         if (this == o) return true;
         if (!(o instanceof OrderDTO)) return false;
         OrderDTO orderDTO = (OrderDTO) o;
-        return Double.compare(orderDTO.amountToPay, amountToPay) == 0 && Objects.equals(orderId, orderDTO.orderId) && Objects.equals(customerId, orderDTO.customerId) && checkIfListsAreEquals(orderedItemsList, orderDTO.orderedItemsList) && Objects.equals(shippingDate, orderDTO.shippingDate);
+        return Double.compare(orderDTO.amountToPay, amountToPay) == 0 && Objects.equals(orderId, orderDTO.orderId) && Objects.equals(customerId, orderDTO.customerId) && OrderedItemsDTO.checkIfListsAreEquals(orderedItemsList, orderDTO.orderedItemsList) && Objects.equals(shippingDate, orderDTO.shippingDate);
     }
 
-    private boolean checkIfListsAreEquals(List<OrderedItemsDTO> orderedItemsList, List<OrderedItemsDTO> orderedItemsList1) {
-        if(orderedItemsList.size() != orderedItemsList1.size()) return false;
-        return orderedItemsList.stream().noneMatch(order -> orderedItemsList1.stream().noneMatch(order2 -> order2.equals(order)));
-    }
+//    public static boolean checkIfListsAreEquals(List<OrderedItemsDTO> orderedItemsList, List<OrderedItemsDTO> orderedItemsList1) {
+//        if(orderedItemsList.size() != orderedItemsList1.size()) return false;
+//        return orderedItemsList.stream().noneMatch(order -> orderedItemsList1.stream().noneMatch(order2 -> order2.equals(order)));
+//    }
 
     @Override
     public int hashCode() {

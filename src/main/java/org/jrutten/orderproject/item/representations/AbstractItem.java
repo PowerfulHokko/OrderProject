@@ -82,12 +82,12 @@ public abstract class AbstractItem {
         if (this == o) return true;
         if (!(o instanceof AbstractItem)) return false;
         AbstractItem that = (AbstractItem) o;
-        return Double.compare(that.price, price) == 0 && Objects.equals(itemId, that.itemId) && Objects.equals(name, that.name) && Objects.equals(description, that.description);
+        return Objects.equals(itemId, that.itemId) && Objects.equals(name, that.name) && Objects.equals(description, that.description);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(itemId, name, description, price);
+        return Objects.hash(itemId, name, description);
     }
 }
 
