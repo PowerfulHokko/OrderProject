@@ -5,6 +5,8 @@ import org.jrutten.orderproject.item.representations.ItemDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.NoSuchElementException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ItemServiceTest {
@@ -58,7 +60,7 @@ class ItemServiceTest {
     @Test
     void givenANewItemForNonExistentId_whenPatch_throwException(){
         CreateItemDTO newItem = new CreateItemDTO("Table", "Flat white designer table", 210.99, 3);
-        assertThrows(IllegalArgumentException.class, () -> this.itemService.updateItem("absoluteboggerid", newItem));
+        assertThrows(NoSuchElementException.class, () -> this.itemService.updateItem("absoluteboggerid", newItem));
     }
 
     @Test

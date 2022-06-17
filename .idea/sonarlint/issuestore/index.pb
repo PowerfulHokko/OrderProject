@@ -36,12 +36,8 @@ Nsrc/main/java/org/jrutten/orderproject/customer/CustomerService_structure.puml
 appLog.txt,0\c\0c15fa451161fe8a725086d62d25e33b5c06d4ea
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-o
-?src/main/java/org/jrutten/orderproject/item/ItemController.java,2\e\2e9c80340aa4f9b16af43979119b11ae8b4dfb88
 u
 Esrc/main/java/org/jrutten/orderproject/item/representations/Item.java,7\e\7ed4a8543e68d46d2df75fc3cf22d01a51497b7f
-o
-?src/main/java/org/jrutten/orderproject/item/ItemRepository.java,2\2\22861bde1c30fc35f74bf573e74edb6e4e8f29bc
 k
 ;src/main/java/org/jrutten/orderproject/item/ItemMapper.java,e\6\e6db510e49ec23e87d42e4f1cbb73042b2d9ed04
 ~
@@ -64,10 +60,6 @@ w
 Gsrc/main/java/org/jrutten/orderproject/customer/CustomerRepository.java,b\a\bae6fdf5d21f6eb6c90e7a149dbb816033bcb209
 v
 Fsrc/main/java/org/jrutten/orderproject/security/WebSecurityConfig.java,4\3\43249d8ca9e4e3cabaa980b38e996e859bd5a288
-l
-<src/main/java/org/jrutten/orderproject/item/ItemService.java,5\a\5aba52000e7bf99dda2ced761f7cb0fdab668b5b
-p
-@src/test/java/org/jrutten/orderproject/item/ItemServiceTest.java,3\8\38755cbcc181f42a1b356b70780a287219c6b004
 t
 Dsrc/main/java/org/jrutten/orderproject/customer/CustomerService.java,e\6\e60cd0a632b63a0997cb3c220549e423385d0cde
 }

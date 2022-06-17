@@ -88,7 +88,7 @@ public class ItemRepository {
     }
 
     public Item updateItemInRepository(Item item) {
-        if(!this.itemMap.containsKey(item.getItemId())) throw new IllegalArgumentException("No id: " + item.getItemId() + " found");
+        if(!this.itemMap.containsKey(item.getItemId())) throw new NoSuchElementException("No id: " + item.getItemId() + " found");
         this.itemMap.replace(item.getItemId(), item);
         return this.itemMap.get(item.getItemId());
     }

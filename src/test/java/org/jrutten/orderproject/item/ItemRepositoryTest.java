@@ -4,6 +4,8 @@ import org.jrutten.orderproject.item.representations.Item;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.NoSuchElementException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ItemRepositoryTest {
@@ -61,6 +63,16 @@ class ItemRepositoryTest {
 
         assertEquals(item2.getName(), itemInMap.getName());
         assertEquals(item2.getPrice(), itemInMap.getPrice());
+    }
+
+    @Test
+    void givenNewItemWithNonExistentId_whenInPatchMode_thenThrowNoSuchElementException(){
+        Item item = new Item("a","Apple", "An apple", 1.20, 2);
+        Item item2 = new Item("ab","Ale", "Ale", 2.80, 6);
+
+        this.itemRepository.addToRepository(item);
+
+        assertThrows(NoSuchElementException.class, ()->this.itemRepository.updateItemInRepository(item2) );
     }
 
 }
