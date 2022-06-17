@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b32ead88c689bc156bfa3df78426eb2472121cde" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" afterDir="false" />
-    </list>
+    <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +177,7 @@
       <updated>1655196163952</updated>
       <workItem from="1655196166817" duration="67498000" />
       <workItem from="1655389475915" duration="1403000" />
-      <workItem from="1655449337541" duration="2339000" />
+      <workItem from="1655449337541" duration="2793000" />
     </task>
     <servers />
   </component>
