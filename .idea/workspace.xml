@@ -5,137 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/NoSuchCustomerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderNotOfCustomerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29cd685ae49df8de1392d848aee84ccb3aa5946f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/appLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-15.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0189189630081300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0189312619154300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0189363499710100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0189524939717800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0190050026838700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0190122901548400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0190559738766700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0190732865978600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0190770549493800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0191103706049100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0191171526336000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0191297611566400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0191379095383400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0191473728788700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.0191674158177700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.10.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.10191744022035400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.11.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1189190304994800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1189312631323000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1189363511945200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1189525521484000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1190050030637200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1190122904650600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1190559750642600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1190732869408900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1190770552899700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1191104301547900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1191171529702400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1191298213839300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1191379098937300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1191474322517500.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.1191674796753000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.12.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.13.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.14.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.15.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2189190307648900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2189312633715600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2189363514640900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2189525533614200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2190050033091800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2190122906976900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2190559753153300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2190732872054400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2190770555139000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2191104304125500.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2191171532076500.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2191298217023100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2191379101076800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2191474333643300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.2191674800057600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3189190309697800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3189316950567400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3189366487782300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3189525536169900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3190066710754800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3190124586226300.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3190572036258500.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3190736053964700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3190772425000600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3191104306424100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3191184244997000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3191298219320600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3191381989189900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3191474335872700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.3191674802292800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4189258799493400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4189317003443600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4189366552575800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4189527621391500.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4190066744811700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4190125147084000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4190596252399800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4190736588322800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4190772952266000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4191107824676100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4191184724802600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4191315558222000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4191382530209900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4191479839106200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.4191677980154200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5189258834036000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5189390126038600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5189527623278000.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5190101197212100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5190133180111200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5190620415689400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5190797396034700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5191126438823400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5191316035684600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5191413673887200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5191480330455700.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.5191693380242800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6189283978120600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6189481218873100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6189554460200400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6190133183858100.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6190631773048500.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6190851492114800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.6191717534997600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.7.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.7189554497057600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.7190138439312600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.7190679213979400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.7190860566301400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.7191727424335400.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.8.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.8189559616596800.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.8190860568856900.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.8191736616592600.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.9.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLog.txt.2022-06-16.9191736620330200.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/ControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/NoSuchCustomerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/NoSuchCustomerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/OrderServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,31 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "7422509ebf51002bb460dbb8256abb14"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7422509ebf51002bb460dbb8256abb14&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Properties"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Properties&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.jrutten.orderproject.order" />
@@ -216,7 +91,7 @@
       <recent name="org.jrutten.orderproject.customer" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderProjectAppRunner">
+  <component name="RunManager" selected="JUnit.All in OrderProject">
     <configuration name="All in OrderProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -225,49 +100,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest.givenAnId_whenCustomerDoesNotExists_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceTest.givenAClientWithNoOrders_butReorder_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.customer.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.customer" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.customer.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="givenAnId_whenCustomerDoesNotExists_throwException" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
+      <option name="METHOD_NAME" value="givenAClientWithNoOrders_butReorder_throwException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest.givenAnId_whenCustomerExists_thenReturnCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceTest.givenAClientWithOrders_butReorderOrderNotOfClient_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.customer.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.customer" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.customer.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="givenAnId_whenCustomerExists_thenReturnCustomer" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
+      <option name="METHOD_NAME" value="givenAClientWithOrders_butReorderOrderNotOfClient_throwException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemServiceTest.givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceTest.givenAClientWithOrders_whenReorderTheOrder_thenReturnNewOrderWithNewPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.item.representations.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemServiceTest" />
-      <option name="METHOD_NAME" value="givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.OrderServiceTest" />
+      <option name="METHOD_NAME" value="givenAClientWithOrders_whenReorderTheOrder_thenReturnNewOrderWithNewPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -288,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OrderProjectAppRunner" />
         <item itemvalue="JUnit.All in OrderProject" />
-        <item itemvalue="JUnit.CustomerServiceTest.givenAnId_whenCustomerDoesNotExists_throwException" />
-        <item itemvalue="JUnit.CustomerServiceTest.givenAnId_whenCustomerExists_thenReturnCustomer" />
-        <item itemvalue="JUnit.ItemServiceTest.givenARepositoryWithItems_whenCallingGetAll_returnsListOfItemDTO" />
+        <item itemvalue="JUnit.OrderServiceTest.givenAClientWithNoOrders_butReorder_throwException" />
+        <item itemvalue="JUnit.OrderServiceTest.givenAClientWithOrders_butReorderOrderNotOfClient_throwException" />
+        <item itemvalue="JUnit.OrderServiceTest.givenAClientWithOrders_whenReorderTheOrder_thenReturnNewOrderWithNewPrice" />
+        <item itemvalue="Spring Boot.OrderProjectAppRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +181,7 @@
       <updated>1655196163952</updated>
       <workItem from="1655196166817" duration="67498000" />
       <workItem from="1655389475915" duration="1403000" />
+      <workItem from="1655449337541" duration="1500000" />
     </task>
     <servers />
   </component>

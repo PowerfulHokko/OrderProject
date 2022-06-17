@@ -1,9 +1,0 @@
-2022-06-16 16:25:27.237  INFO 20728 --- [http-nio-8080-exec-2] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
-2022-06-16 16:25:27.279  INFO 20728 --- [http-nio-8080-exec-2] o.j.orderproject.order.OrderService      : reorder request for customer: JD and order: 52b6
-2022-06-16 16:25:27.280  INFO 20728 --- [http-nio-8080-exec-2] o.j.orderproject.order.OrderRepository   : 1
-2022-06-16 16:25:27.284  WARN 20728 --- [http-nio-8080-exec-2] o.j.o.ControllerExceptionHandler         : null
-2022-06-16 16:29:47.627  INFO 15012 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 15012 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
-2022-06-16 16:29:47.630  INFO 15012 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"
-2022-06-16 16:29:48.327  INFO 15012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-06-16 16:29:48.333  INFO 15012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-16 16:29:48.333  INFO 15012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]

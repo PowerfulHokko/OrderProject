@@ -1,3 +1,0 @@
-2022-06-16 16:43:14.875  INFO 3560 --- [http-nio-8080-exec-1] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
-2022-06-16 16:43:14.915  INFO 3560 --- [http-nio-8080-exec-1] o.j.orderproject.order.OrderService      : reorder request for customer: JD and order: 52b6
-2022-06-16 16:43:14.919  WARN 3560 --- [http-nio-8080-exec-1] o.j.o.ControllerExceptionHandler         : null

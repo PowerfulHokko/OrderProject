@@ -105,9 +105,65 @@ class OrderServiceTest {
     }
 
     @Test
-    void givenANonExistentCustomer_whenRequestingAllOrders_thenThrowNoSuchElementException(){
-        assertThrows(NoSuchElementException.class, () -> this.orderService.getAllByCustomerId("thisonedoesnormallynotexist"));
+    void givenANonExistentCustomer_whenRequestingAllOrders_thenThrowNoSuchCustomerException(){
+        assertThrows(NoSuchCustomerException.class, () -> this.orderService.getAllByCustomerId("thisonedoesnormallynotexist"));
     }
+
+
+    //given a client with orders, when reorder on a particular order for that client reorder (with new prices)
+    @Test
+    void givenAClientWithOrders_whenReorderTheOrder_thenReturnNewOrderWithNewPrice(){
+        Item item = new Item("1", "bike", "2 wheels", 20, 2);
+        Address address = new Address("lane",3,"b", 3000, "L-city");
+        Customer customer = new Customer("az", "Alfred", "Jab", "af@jad.be", address, "044-5555-77");
+
+        this.itemRepository.addToRepository(item);
+        this.customerRepository.registerCustomerAccount(customer);
+
+        List<ItemsToOrderDTO> items = new ArrayList<>();
+        items.add(new ItemsToOrderDTO("1", 1));
+
+        OrderDTO orderDTO = this.orderService.placeOrder(customer.getId(), items);
+
+        item.setPrice(40);
+        item.setStock(5);
+
+        assertEquals(20, orderDTO.getAmountToPay());
+
+        OrderDTO reOrder = this.orderService.reOrder(customer.getId(), orderDTO.getOrderId());
+        assertEquals(orderDTO.getOrderedItemsList().get(0).getItem().getItemId(), reOrder.getOrderedItemsList().get(0).getItem().getItemId());
+        assertEquals(orderDTO.getOrderedItemsList().get(0).getAmount(), reOrder.getOrderedItemsList().get(0).getAmount());
+        assertEquals(item.getPrice(), reOrder.getOrderedItemsList().get(0).getItem().getPrice());
+    }
+
+    //given a particular client, with orders, but reorder wrong order then throw OrderNotOfC
+    @Test
+    void givenAClientWithOrders_butReorderOrderNotOfClient_throwException(){
+        Item item = new Item("1", "bike", "2 wheels", 20, 2);
+        Address address = new Address("lane",3,"b", 3000, "L-city");
+        Customer customer = new Customer("az", "Alfred", "Jab", "af@jad.be", address, "044-5555-77");
+
+        this.itemRepository.addToRepository(item);
+        this.customerRepository.registerCustomerAccount(customer);
+
+        List<ItemsToOrderDTO> items = new ArrayList<>();
+        items.add(new ItemsToOrderDTO("1", 1));
+
+        OrderDTO orderDTO = this.orderService.placeOrder(customer.getId(), items);
+
+        assertThrows(OrderNotOfCustomerException.class, ()-> this.orderService.reOrder(customer.getId(), "thisonedoesnotexistandwillthrowanerror"));
+    }
+
+    //given a particular client, but has never ordered anything throw NoSuchC
+    @Test
+    void givenAClientWithNoOrders_butReorder_throwException(){
+        Item item = new Item("1", "bike", "2 wheels", 20, 2);
+        Address address = new Address("lane",3,"b", 3000, "L-city");
+        Customer customer = new Customer("az", "Alfred", "Jab", "af@jad.be", address, "044-5555-77");
+
+        assertThrows(NoSuchCustomerException.class, ()-> this.orderService.reOrder(customer.getId(), "thisonedoesnotexistandwillthrowanerror"));
+    }
+
 
 
 

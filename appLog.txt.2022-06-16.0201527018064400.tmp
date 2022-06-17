@@ -1,5 +1,0 @@
-2022-06-16 16:43:39.476  INFO 13296 --- [http-nio-8080-exec-4] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
-2022-06-16 16:43:39.512  INFO 13296 --- [http-nio-8080-exec-4] o.j.orderproject.order.OrderService      : reorder request for customer: JD and order: 52b6
-2022-06-16 16:43:39.515  WARN 13296 --- [http-nio-8080-exec-4] o.j.o.ControllerExceptionHandler         : null
-2022-06-16 16:47:24.910  INFO 25412 --- [main] o.j.orderproject.OrderProjectAppRunner   : Starting OrderProjectAppRunner using Java 18.0.1.1 on LAPTOP-MUKNS155 with PID 25412 (C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\target\classes started by Jurgen Rutten in C:\Users\Jurgen Rutten\IdeaProjects\OrderProject)
-2022-06-16 16:47:24.914  INFO 25412 --- [main] o.j.orderproject.OrderProjectAppRunner   : No active profile set, falling back to 1 default profile: "default"

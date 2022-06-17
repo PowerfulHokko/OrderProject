@@ -1,4 +1,0 @@
-2022-06-16 16:41:55.343  INFO 23612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-16 16:41:55.347  INFO 23612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-06-16 16:41:55.446  INFO 23612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-16 16:41:55.446  INFO 23612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 841 ms

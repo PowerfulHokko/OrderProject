@@ -1,2 +1,0 @@
-2022-06-16 16:37:18.516  INFO 9976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-16 16:37:18.519  INFO 9976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 734 ms

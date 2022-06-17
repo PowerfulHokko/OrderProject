@@ -75,7 +75,7 @@ public class OrderService {
 
     private void validateCustomer(String customerId) {
         if (! this.customerRepository.getCustomerMap().containsKey(customerId)) {
-            throw new NoSuchElementException("No client with id" + customerId);
+            throw new NoSuchCustomerException("No client with id" + customerId);
         }
     }
 

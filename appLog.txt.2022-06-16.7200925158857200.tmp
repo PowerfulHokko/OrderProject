@@ -1,2 +1,0 @@
-2022-06-16 16:37:22.182  INFO 9976 --- [http-nio-8080-exec-3] o.j.orderproject.order.OrderService      : reorder request for customer: JD and order: 52b6
-2022-06-16 16:37:22.184  WARN 9976 --- [http-nio-8080-exec-3] o.j.o.ControllerExceptionHandler         : null

@@ -64,8 +64,6 @@ w
 Gsrc/main/java/org/jrutten/orderproject/customer/CustomerController.java,9\3\93665874332a9aaee3abf2394a490c418a994ecb
 z
 Jsrc/main/java/org/jrutten/orderproject/order/representations/OrderDTO.java,3\b\3bf8b1ccaa2ce3d6a0ec55d8bc84a03f347d0672
-r
-Bsrc/test/java/org/jrutten/orderproject/order/OrderServiceTest.java,2\9\29cd685ae49df8de1392d848aee84ccb3aa5946f
 w
 Gsrc/main/java/org/jrutten/orderproject/customer/CustomerRepository.java,b\a\bae6fdf5d21f6eb6c90e7a149dbb816033bcb209
 v
