@@ -1,5 +1,6 @@
 package org.jrutten.orderproject.order.representations;
 
+import org.jrutten.orderproject.fieldValidators.FieldValidators;
 import org.jrutten.orderproject.item.representations.ItemDTO;
 
 import java.util.Objects;
@@ -10,6 +11,7 @@ public class OrderedItemsDTO{
     private int amount;
 
     public OrderedItemsDTO(ItemDTO item, double pricePerPieceAtRequest, int amount) {
+        FieldValidators.guardZeroOrLessThan(amount, (int) pricePerPieceAtRequest);
         this.item = item;
         this.pricePerPieceAtRequest = pricePerPieceAtRequest;
         this.amount = amount;
@@ -28,6 +30,7 @@ public class OrderedItemsDTO{
     }
 
     public void setAmount(int amount) {
+        FieldValidators.guardZeroOrLessThan(amount);
         this.amount = amount;
     }
 

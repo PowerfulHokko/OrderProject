@@ -48,4 +48,19 @@ class ItemRepositoryTest {
         assertThrows(IllegalArgumentException.class, () -> itemRepository.addToRepository(item2));
     }
 
+    @Test
+    void givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite(){
+        Item item = new Item("a","Apple", "An apple", 1.20, 2);
+        Item item2 = new Item("a","Ale", "Ale", 2.80, 6);
+
+        this.itemRepository.addToRepository(item);
+        this.itemRepository.updateItemInRepository(item2);
+
+
+        Item itemInMap = this.itemRepository.getItemMap().get(item.getItemId());
+
+        assertEquals(item2.getName(), itemInMap.getName());
+        assertEquals(item2.getPrice(), itemInMap.getPrice());
+    }
+
 }

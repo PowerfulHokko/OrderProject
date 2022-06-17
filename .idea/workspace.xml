@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29cd685ae49df8de1392d848aee84ccb3aa5946f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b32ead88c689bc156bfa3df78426eb2472121cde" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/NoSuchCustomerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/NoSuchCustomerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/OrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +89,27 @@
       <recent name="org.jrutten.orderproject.customer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in OrderProject">
+  <component name="RunManager" selected="JUnit.ItemRepositoryTest.givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite">
     <configuration name="All in OrderProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemRepositoryTest.givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OrderProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jrutten.orderproject.item.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.item" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.item.ItemRepositoryTest" />
+      <option name="METHOD_NAME" value="givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,26 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderProjectAppRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="OrderProject" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.jrutten.orderproject.OrderProjectAppRunner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemRepositoryTest.givenNewItemWithIdOfOld_whenInPatchMode_thenOverWrite" />
         <item itemvalue="JUnit.All in OrderProject" />
         <item itemvalue="JUnit.OrderServiceTest.givenAClientWithNoOrders_butReorder_throwException" />
         <item itemvalue="JUnit.OrderServiceTest.givenAClientWithOrders_butReorderOrderNotOfClient_throwException" />
         <item itemvalue="JUnit.OrderServiceTest.givenAClientWithOrders_whenReorderTheOrder_thenReturnNewOrderWithNewPrice" />
-        <item itemvalue="Spring Boot.OrderProjectAppRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +182,7 @@
       <updated>1655196163952</updated>
       <workItem from="1655196166817" duration="67498000" />
       <workItem from="1655389475915" duration="1403000" />
-      <workItem from="1655449337541" duration="1500000" />
+      <workItem from="1655449337541" duration="2339000" />
     </task>
     <servers />
   </component>

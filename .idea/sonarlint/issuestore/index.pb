@@ -36,8 +36,6 @@ Nsrc/main/java/org/jrutten/orderproject/customer/CustomerService_structure.puml
 appLog.txt,0\c\0c15fa451161fe8a725086d62d25e33b5c06d4ea
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-s
-Csrc/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java,a\8\a8a4f79e68004f1929a829d899cd89f05e3cb865
 o
 ?src/main/java/org/jrutten/orderproject/item/ItemController.java,2\e\2e9c80340aa4f9b16af43979119b11ae8b4dfb88
 u
@@ -54,8 +52,6 @@ Nsrc/main/java/org/jrutten/orderproject/order/representations/OrderedItems.java
 Msrc/main/java/org/jrutten/orderproject/item/representations/AbstractItem.java,0\9\0943b892b8d4b33f6ad6bb465380d5f55d331367
 x
 Hsrc/main/java/org/jrutten/orderproject/item/representations/ItemDTO.java,9\f\9f13d10163e71aa282063d6dc40c4bc9e16b351e
-Å
-Qsrc/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java,b\3\b32ead88c689bc156bfa3df78426eb2472121cde
 s
 Csrc/main/java/org/jrutten/orderproject/customer/CustomerMapper.java,5\6\562f4e63d5819eab97d0dd5a10ae11c29d8af65c
 x
