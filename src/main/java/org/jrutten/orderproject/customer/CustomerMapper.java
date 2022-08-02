@@ -11,11 +11,11 @@ import java.util.stream.Collectors;
 @Component
 public class CustomerMapper {
     public CustomerDTO toCustomerDTO(Customer customer) {
-        return new CustomerDTO(customer.getId(), customer.getFirstName(), customer.getLastName(), customer.getEmail(), customer.getAddress(), customer.getPhoneNumber());
+        return new CustomerDTO(customer.getId(), customer.getFirstName(), customer.getLastName(), customer.getEmail(), customer.getAddress());
     }
 
     public Customer toCustomer(CreateCustomerDTO createCustomerDTO) {
-        return new Customer(createCustomerDTO.getFirstName(), createCustomerDTO.getLastName(), createCustomerDTO.getEmail(), createCustomerDTO.getAddress(), createCustomerDTO.getPhoneNumber());
+        return new Customer(createCustomerDTO.getFirstName(), createCustomerDTO.getLastName(), createCustomerDTO.getEmail(), createCustomerDTO.getAddress());
     }
 
     public List<CustomerDTO> toCustomerDTO(List<Customer> allCustomers) {

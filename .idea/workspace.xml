@@ -5,15 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af154e3-041a-44f3-b209-7e8536d79aca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/representations/OrderDTOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/0943b892b8d4b33f6ad6bb465380d5f55d331367" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bf8b1ccaa2ce3d6a0ec55d8bc84a03f347d0672" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f13d10163e71aa282063d6dc40c4bc9e16b351e" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bf8b1ccaa2ce3d6a0ec55d8bc84a03f347d0672" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/JPACustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/JPAItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/JPAOrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/JPAOrderedItemsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/AuthorizedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/SecurityLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/SecurityLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__add_table_items.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__primary_key_id_on_items.SQL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__order_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__Security Log.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/customer/CustomerControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/038a024d06aa3848035418420e9c0342c3183dea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09b64eb7867fc80ba0051edd6573c6c4929b7540" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/2555e966d4d45a80cfa96aaf77bd76a7a1b427cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cd5a023146c82e38f8c49a15cfd8684973d82d2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2cd5a023146c82e38f8c49a15cfd8684973d82d2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43249d8ca9e4e3cabaa980b38e996e859bd5a288" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/4728fa8cb58e7b300d69e4e4527a1564b5f90040" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/4728fa8cb58e7b300d69e4e4527a1564b5f90040" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562f4e63d5819eab97d0dd5a10ae11c29d8af65c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7ed4a8543e68d46d2df75fc3cf22d01a51497b7f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89138f6fea3cd9e4cde75ce4763d1c226f213dfb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/93665874332a9aaee3abf2394a490c418a994ecb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94196853cd2d0d89849a9a2fe3bb0c2ce25bb2ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a7dcbca2e28316db5217ff4594a551a2fc99e427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba7260e6980a43f7b6d23f9c626e8ff9d6893d55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/bae6fdf5d21f6eb6c90e7a149dbb816033bcb209" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5bed76c6f159ac071ba828d5d5b3a13bf45e12f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbb608f1a99924504c0d365fe8c959cca04a3127" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbb608f1a99924504c0d365fe8c959cca04a3127" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e60cd0a632b63a0997cb3c220549e423385d0cde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6db510e49ec23e87d42e4f1cbb73042b2d9ed04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6eca0a217ee2d3ab7400aed3a670d92cdf165fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f70d76957730b377a1a07a0d86a90e87e4e9a8eb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/AbstractItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/AbstractItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/appLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/AbstractCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/AbstractCustomerWithID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/CreateCustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/CreateCustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/customer/representations/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/AbstractItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/CreateItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/CreateItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/item/representations/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/ItemsToOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/ItemsToOrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/order/representations/OrderedItemsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/KeycloakGrantedAuthoritiesConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/KeycloakGrantedAuthoritiesConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jrutten/orderproject/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/customer/CustomerServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/item/ItemServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/OrderServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/jrutten/orderproject/order/representations/OrderDTOTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +95,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,6 +152,9 @@
     &quot;spring.configuration.checksum&quot;: &quot;7422509ebf51002bb460dbb8256abb14&quot;
   },
   &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ],
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
       &quot;Properties&quot;
     ]
@@ -74,11 +162,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.jrutten.orderproject.security" />
       <recent name="org.jrutten.orderproject.order" />
       <recent name="org.jrutten.orderproject.item" />
       <recent name="org.jrutten.orderproject.customer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\src\main\resources\db\migration" />
       <recent name="C:\Users\Jurgen Rutten\IdeaProjects\OrderProject" />
       <recent name="C:\Users\Jurgen Rutten\IdeaProjects\OrderProject\src\main\resources" />
     </key>
@@ -89,13 +179,13 @@
       <recent name="org.jrutten.orderproject" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.jrutten.orderproject.customer" />
       <recent name="org.jrutten.orderproject.order.representations" />
       <recent name="org.jrutten.orderproject.item" />
       <recent name="org.jrutten.orderproject.order" />
-      <recent name="org.jrutten.orderproject.customer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in OrderProject">
+  <component name="RunManager" selected="Spring Boot.OrderProjectAppRunner">
     <configuration name="All in OrderProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,34 +194,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderDTOTest.givenAllFieldsFilled_whenCreatingANewOrderDTO_thenOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.order.representations.*" />
+          <option name="PATTERN" value="org.jrutten.orderproject.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order.representations" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.representations.OrderDTOTest" />
-      <option name="METHOD_NAME" value="givenAllFieldsFilled_whenCreatingANewOrderDTO_thenOK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderDTOTest.givenAmountToPayForSomeReasonIsZero_whenCreatingANewOrderDTO_throwIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OrderProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jrutten.orderproject.order.representations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.order.representations" />
-      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.order.representations.OrderDTOTest" />
-      <option name="METHOD_NAME" value="givenAmountToPayForSomeReasonIsZero_whenCreatingANewOrderDTO_throwIllegalArgumentException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.jrutten.orderproject.customer" />
+      <option name="MAIN_CLASS_NAME" value="org.jrutten.orderproject.customer.CustomerControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,13 +241,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderProjectAppRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="OrderProject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.jrutten.orderproject.OrderProjectAppRunner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jrutten.orderproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderProjectAppRunner" />
+        <item itemvalue="JUnit.CustomerControllerIntegrationTest" />
         <item itemvalue="JUnit.All in OrderProject" />
         <item itemvalue="JUnit.OrderDTOTest.givenTwoListsOfOrderedItemsDTO_whenBothListsContainTheSameItemsExceptForPrice_returnTrue" />
         <item itemvalue="JUnit.OrderDTOTest.givenTwoListsOfOrderedItemsDTO_whenBothListsDONOTContainTheSameItemsExceptForPrice_returnFalse" />
-        <item itemvalue="JUnit.OrderDTOTest.givenAmountToPayForSomeReasonIsZero_whenCreatingANewOrderDTO_throwIllegalArgumentException" />
-        <item itemvalue="JUnit.OrderDTOTest.givenAllFieldsFilled_whenCreatingANewOrderDTO_thenOK" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +274,17 @@
       <updated>1655196163952</updated>
       <workItem from="1655196166817" duration="67498000" />
       <workItem from="1655389475915" duration="1403000" />
-      <workItem from="1655449337541" duration="4912000" />
+      <workItem from="1655449337541" duration="8873000" />
+      <workItem from="1655810433310" duration="37000" />
+      <workItem from="1655817638359" duration="620000" />
+      <workItem from="1656403901007" duration="1474000" />
+      <workItem from="1656495508444" duration="65000" />
+      <workItem from="1656922196037" duration="608000" />
+      <workItem from="1657009118283" duration="20964000" />
+      <workItem from="1657091075536" duration="25226000" />
+      <workItem from="1657784258936" duration="5130000" />
+      <workItem from="1657796922126" duration="3318000" />
+      <workItem from="1659342185564" duration="12249000" />
     </task>
     <servers />
   </component>

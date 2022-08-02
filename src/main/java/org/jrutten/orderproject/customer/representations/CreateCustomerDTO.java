@@ -1,9 +1,19 @@
 package org.jrutten.orderproject.customer.representations;
 
-public class CreateCustomerDTO extends AbstractCustomer {
-    public CreateCustomerDTO(String firstName, String lastName, String email, Address address, String phoneNumber) {
-        super(firstName, lastName, email, address, phoneNumber);
-    }
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.experimental.FieldDefaults;
 
+import javax.persistence.Column;
+import javax.persistence.Embedded;
 
+@AllArgsConstructor
+@Data
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class CreateCustomerDTO {
+    String firstName;
+    String lastName;
+    String email;
+    Address address;
 }

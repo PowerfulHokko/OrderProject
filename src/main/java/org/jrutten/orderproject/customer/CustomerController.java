@@ -2,8 +2,10 @@ package org.jrutten.orderproject.customer;
 
 import org.jrutten.orderproject.customer.representations.CreateCustomerDTO;
 import org.jrutten.orderproject.customer.representations.CustomerDTO;
+//import org.jrutten.orderproject.security.KeycloakGrantedAuthoritiesConverter;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,11 +29,13 @@ public class CustomerController {
         return this.customerService.createCustomerAccount(createCustomerDTO);
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
+//    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping(value = {"", "/{id}"},produces = "application/json")
     @ResponseStatus(HttpStatus.OK)
-    public List<CustomerDTO> getCustomers(@PathVariable(required = false) String id){
-        if(id != null && !id.isBlank()) return List.of(this.customerService.getCustomerById(id));
+    public List<CustomerDTO> getCustomers(@PathVariable(required = false) Integer id, @RequestHeader("Authorization") String token) {
+        String uToken = token;
+        this.customerService.logSecurity(this.getClass(), "getCustomers", uToken);
+        if(id != null) return List.of(this.customerService.getCustomerById(id));
         return this.customerService.getAllCustomers();
     }
 

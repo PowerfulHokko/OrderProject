@@ -1,7 +1,15 @@
 package org.jrutten.orderproject.item.representations;
 
-public class CreateItemDTO extends AbstractItem {
-    public CreateItemDTO(String name, String description, double price, int stock) {
-        super(name, description, price, stock);
-    }
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class CreateItemDTO  {
+    String name;
+    String description;
+    double price;
+    int stock;
 }

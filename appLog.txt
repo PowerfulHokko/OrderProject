@@ -1,3 +1,3 @@
-2022-06-16 16:47:39.667  INFO 25412 --- [http-nio-8080-exec-1] .o.s.KeycloakGrantedAuthoritiesConverter : Checking for auth
-2022-06-16 16:47:39.714  INFO 25412 --- [http-nio-8080-exec-1] o.j.orderproject.order.OrderService      : reorder request for customer: JD and order: 52b6
-2022-06-16 16:47:39.717  WARN 25412 --- [http-nio-8080-exec-1] o.j.o.ControllerExceptionHandler         : null
+2022-07-05 11:30:49.425  INFO 13504 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 11:30:49.427  INFO 13504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 11:30:49.429  INFO 13504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

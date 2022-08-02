@@ -1,0 +1,6 @@
+
+ˆ
+java:S6206"mRefactor this class declaration to use 'record OrderDTO(int orderId, int customerId, List<...> orderedI...)'.(Äéµ™ýÿÿÿÿ
+V	java:S125H"<This block of commented-out lines of code should be removed.(‚°¿ûÿÿÿÿ
+O
+java:S1144"4Remove this unused private "generateOrderId" method.(–‘ Üûÿÿÿÿ

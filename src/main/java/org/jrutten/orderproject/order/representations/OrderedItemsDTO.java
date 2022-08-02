@@ -37,7 +37,7 @@ public class OrderedItemsDTO{
 
     @Override
     public String toString() {
-        return "**" +this.getItem().getItemId()+ "**"+this.getAmount();
+        return "**" +this.getItem().getId()+ "**"+this.getAmount();
     }
 
     @Override

@@ -12,15 +12,15 @@ import java.util.stream.Collectors;
 @Component
 public class ItemMapper {
     public Item toItem(CreateItemDTO createItemDTO) {
-        return new Item(createItemDTO.getItemId(), createItemDTO.getName(), createItemDTO.getDescription(), createItemDTO.getPrice(), createItemDTO.getStock());
+        return new Item(createItemDTO.getName(), createItemDTO.getDescription(), createItemDTO.getPrice(), createItemDTO.getStock());
     }
 
-    public Item toItem(CreateItemDTO createItemDTO, String idForUpdate) {
+    public Item toItem(CreateItemDTO createItemDTO, int idForUpdate) {
         return new Item(idForUpdate, createItemDTO.getName(), createItemDTO.getDescription(), createItemDTO.getPrice(), createItemDTO.getStock());
     }
 
     public ItemDTO toItemDTO(Item item) {
-        return new ItemDTO(item.getItemId(), item.getName(), item.getDescription(), item.getPrice(), item.getStock());
+        return new ItemDTO(item.getId(), item.getName(), item.getDescription(), item.getPrice(), item.getStock());
     }
 
     public List<ItemDTO> mapListOfItemsToListOfItemDTO(Collection<Item> items) {

@@ -1,17 +1,40 @@
 package org.jrutten.orderproject.customer.representations;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.FieldDefaults;
 import org.jrutten.orderproject.fieldValidators.FieldValidators;
 
-public class Address {
-    private final String street;
-    private final int streetNumber;
-    private final String bus;
-    private final int postalCode;
-    private String city;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
-    public Address(String street, int streetNumber, String bus, int postalCode, String city) {
+@Embeddable
+@NoArgsConstructor
+@Getter
+@Setter
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class Address {
+
+    @Column(name = "street", nullable = false)
+    String street;
+
+    @Column(name = "street_number", nullable = false)
+    int streetNumber;
+
+    @Column(name = "bus", nullable = true)
+    String bus;
+
+    @Column(name = "postalcode", nullable = false)
+    String postalCode;
+
+    @Column(name = "city", nullable = false)
+    String city;
+
+    public Address(String street, int streetNumber, String bus, String postalCode, String city) {
         FieldValidators.guardStringNullAndBlank(street, city);
-        FieldValidators.guardZeroOrLessThan(streetNumber, postalCode);
+        FieldValidators.guardZeroOrLessThan(streetNumber);
 
         if(bus == null || bus.isBlank()){
             this.bus = "";
@@ -37,7 +60,7 @@ public class Address {
         return bus;
     }
 
-    public int getPostalCode() {
+    public String getPostalCode() {
         return postalCode;
     }
 

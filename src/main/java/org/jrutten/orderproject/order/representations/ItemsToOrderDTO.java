@@ -1,15 +1,15 @@
 package org.jrutten.orderproject.order.representations;
 
 public class ItemsToOrderDTO {
-    private final String itemId;
+    private final int itemId;
     private final int requestedAmount;
 
-    public ItemsToOrderDTO(String itemId, int requestedAmount) {
+    public ItemsToOrderDTO(int itemId, int requestedAmount) {
         this.itemId = itemId;
         this.requestedAmount = requestedAmount;
     }
 
-    public String getItemId() {
+    public int getItemId() {
         return itemId;
     }
 

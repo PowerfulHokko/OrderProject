@@ -9,13 +9,13 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class OrderDTO {
-    private final String orderId;
-    private final String customerId;
+    private final int orderId;
+    private final int customerId;
     private final List<OrderedItemsDTO> orderedItemsList;
     private final LocalDate shippingDate;
     private final double amountToPay;
 
-    public OrderDTO(String orderId, String customerId, List<OrderedItemsDTO> orderedItemsList, LocalDate shippingDate, double amountToPay) {
+    public OrderDTO(int orderId, int customerId, List<OrderedItemsDTO> orderedItemsList, LocalDate shippingDate, double amountToPay) {
         FieldValidators.guardZeroOrLessThan((int) amountToPay);
         this.orderId = orderId;
         this.customerId = customerId;
@@ -28,11 +28,11 @@ public class OrderDTO {
         return UUID.randomUUID().toString();
     }
 
-    public String getOrderId() {
+    public int getOrderId() {
         return orderId;
     }
 
-    public String getCustomerId() {
+    public int getCustomerId() {
         return customerId;
     }
 

@@ -26,7 +26,7 @@ public class ControllerExceptionHandler {
 
     @ExceptionHandler(CustomerAlreadyRegisteredException.class)
     public void handleCustomerAlreadyRegisteredException(CustomerAlreadyRegisteredException exception, HttpServletResponse response) throws IOException {
-        response.sendError(HttpServletResponse.SC_NOT_MODIFIED, exception.getMessage());
+        response.sendError(HttpServletResponse.SC_CONFLICT, exception.getMessage());
         logger.warning(exception.getMessage());
     }
 

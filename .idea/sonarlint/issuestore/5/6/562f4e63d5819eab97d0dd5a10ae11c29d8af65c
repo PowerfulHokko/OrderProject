@@ -1,3 +1,0 @@
-
-{
-java:S6204"^Replace this usage of 'Stream.collect(Collectors.toUnmodifiableList())' with 'Stream.toList()'(Éê”—8Èòûá–0
